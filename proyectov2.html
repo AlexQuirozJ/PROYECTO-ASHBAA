@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+        <link rel="stylesheet" href="proyecto2.css">
+        <title> COMPARADOR DE PRECIOS</title>
+</head>
+<body>
+  <!--MENU DESPLEGABLE-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning  sticky-top" id="DESPLEGABLE">
+        <a class="navbar-brand" href="">Catalogo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Diferencial <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mi lista</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recomendaciones
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Chatboot de sugerencias</a>
+                
+              </div>
+            </li>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Producto" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+      <!--RECUADRO DE NOTA-->
+      
+      <!--IAMGEN DE LOGO Y NOTA-->
+      <img src="IMAGENES-A/logo5.PNG" height="160" width="200" id="imgASHBA">
+
+      <div id="DIVLOGO">
+        <h3>Las mejores ofertas de todos tus productos en un solo lugar.</h3>
+        <p>!Encuentra todos tus aparatos electronicos y compara el mejor precio!</p>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,224L1440,160L1440,0L0,0Z"></path></svg>
+
+
+ <!--SOLICITUD Y FONDO-->
+ <nav id="FONDO"> 
+  <nav class="navbar navbar-light  bg-light shadow-lg p-1 mb-2 bg-white rounded" id="NAVBAR1">
+    <a class="navbar-brand ">Escribe el producto que estas buscando (electronicos)</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+</nav>
+
+
+
+    
+    <!--SOLICITUD Y FONDO-->
+    
+    <div id="clasificacion">
+    <a class="nav-link dropdown-toggle btn btn-warning" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filtro</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Mayor precio</a>
+      <a class="dropdown-item" href="#">Menor precio</a>
+      <a class="dropdown-item" href="#">Favoritos</a>
+      <div class="dropdown-divider"></div>
+      
+    </div>
+  </li>
+</div>
+
+<!--MAS POPULARES-->
+<div class="row row-cols-2 row-cols-md-3">
+    <div class="col mb-2">
+      <div class="card" id="card1">
+        <img src="IMAGENES-A/computadoras.jpeg" class="card-img-top" alt="..." width="30" height="350">
+        <div class="card-body">
+          <h5 class="card-title">COMPUTADORAS</h5>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card" id="card2">
+        <img src="IMAGENES-A/smartphone.jpeg" class="card-img-top" alt="..." width="30" height="350">
+        <div class="card-body">
+          <h5 class="card-title">SMPARTPHONE</h5>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card" id="card3">
+        <img src="IMAGENES-A/tablet.jpeg" class="card-img-top" alt="..." width="30" height="350">
+        <div class="card-body">
+          <h5 class="card-title">TABLETS</h5>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="col mb-4">
+      <div class="card" id="card4">
+        <img src="IMAGENES-A/television.jpeg" class="card-img-top" alt="..." width="30" height="350">
+        <div class="card-body">
+          <h5 class="card-title">PANTALLAS PLANAS</h5>
+          
+    </div>
+        </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" id="card5">
+            <img src="IMAGENES-A/audifonos.jpeg" class="card-img-top" alt="..." width="30" height="350">
+            <div class="card-body">
+              <h5 class="card-title">AURICULARES</h5>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" id="card6">
+            <img src="IMAGENES-A/laptop.jpeg" class="card-img-top" alt="..." width="30" height="350">
+            <div class="card-body">
+              <h5 class="card-title">LAPTOP</h5>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--CLASIFICACION MEDIA, BAJA, ALTA-->
+  <div id="gama">
+    <h1 id="letras">ELIGE UNA GAMA</h1>
+  </div>
+
+
+  <button type="button" class="btn bg-info btn-lg" id="boton1">GAMA BAJA</button>
+  <button type="button" class="btn bg-info btn-lg" id="boton2">GAMA MEDIA</button>
+  <button type="button" class="btn bg-info btn-lg" id="boton3">GAMA ALTA</button>
+
+  <hr id="hr">
+  <button type="button" class="btn bg-warning btn-lg" id="boton4">DAME EL MEJOR PRECIO!</button>
+
+  <hr id="hr">
+
+  <!--RESULTADOS CON TIENDAS-->
+  <div id="RESULT">
+    <p id="letras2">Y ESTOS SON LOS RESULTADOS EN DIFERNTES TIENDAS</p>
+  </div>
+
+  <button type="button" class="btn btn-primary btn-lg" id="boton5">WALRMAR</button>
+  <button type="button" class="btn bg-info btn-lg" id="boton6">AMAZON</button>
+  <button type="button" class="btn bg-warning btn-lg" id="boton7">COPPEL</button>
+
+  <!--EJEMPLO DE RESULTADOS-->
+  <div class="card-group2">
+    <div class="card" id="card1_result">
+      <img src="IMAGENES-A/iphone.PNG" class="card-img-top" alt="..." width="200px" height="200">
+      <div class="card-body">
+        <h5 class="card-title">IPHONE XR</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">VER PRODUCTOS</small>
+      </div>
+    </div>
+    <div class="card" id="card1_result2">
+      <img src="IMAGENES-A/pcc.jpg" class="card-img-top" alt="..." width="200px" height="200">
+      <div class="card-body">
+        <h5 class="card-title">PC GAMER</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">VER PRODUCTOS</small>
+      </div>
+    </div>
+    <div class="card" id="card1_result3">
+      <img src="IMAGENES-A/tablet.jpg" class="card-img-top" alt="..." width="200px" height="200">
+      <div class="card-body">
+        <h5 class="card-title">TABLET</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">VER PRODUCTOS</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-group2">
+    <div class="card" id="card1_result4">
+      <img src="IMAGENES-A/pantallaP.jpg" class="card-img-top" alt="..." width="200px" height="200">
+      <div class="card-body">
+        <h5 class="card-title">PANTALLA PLANA</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">VER PRODUCTOS</small>
+      </div>
+    </div>
+    <div class="card" id="card1_result5">
+      <img src="IMAGENES-A/auriculares.jpg" class="card-img-top" alt="..." width="200px" height="200">
+      <div class="card-body">
+        <h5 class="card-title">AURICULARES</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">VER PRODUCTOS</small>
+      </div>
+    </div>
+    <div class="card" id="card1_result6">
+      <img src="IMAGENES-A/laptop.jpeg" class="card-img-top" alt="..." width="200px" height="200">
+      <div class="card-body">
+        <h5 class="card-title">LAPTOP</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">VER PRODUCTOS</small>
+      </div>
+    </div>
+  </div>
+
+
+      
+  <!--CUADROS-->
+  <section>
+    <article>
+        
+        <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src="IMAGENES-A/pexels-ola-dapo-3345882.jpg" height="300" width="200" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">BUSCA APARATOS ELECTRONICOS</h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted">Con nuestro sistema ASHBA, busca los aparatos que necesites, colocamos los productos electronicos al mejor costo</small></p>
+              </div>
+            </div>
+            <div class="card ml-5">
+              <img class="card-img-top" src="IMAGENES-A/pexels-cleyder-duque-3637728.jpg" height="300" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">PRODUCTOS</h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted">Prepara tu lista de compras, porque aquí encontraras diversos electrodomesticos, mira el costo, compra ya y ahorra.</small></p>
+              </div>
+            </div>
+            <div class="card ml-5">
+              <img class="card-img-top" src="IMAGENES-A/pexels-fauxels-3183197.jpg" height="300"  alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">NOS PREOCUPAMOS POR TUS AHORROS</h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted">En ASHBA, nos enfocamos en comparar los mejores precios para darte los mejores productos a un excelente costo.</small></p>
+              </div>
+            </div>
+          </div>
+
+    </article>
+</section>
+
+<!--FORMA DE AGUA-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="SVG"><path fill="#ffd700" fill-opacity="1" d="M0,64L26.7,96C53.3,128,107,192,160,208C213.3,224,267,192,320,160C373.3,128,427,96,480,106.7C533.3,117,587,171,640,197.3C693.3,224,747,224,800,234.7C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,224C1173.3,181,1227,107,1280,69.3C1333.3,32,1387,32,1413,32L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+
+<!--PIE DE PAGINA
+<div id="PIE"> 
+  <img src="IMAGENES-A/logo5.PNG" width="300" height="300" id="IMGPIE">
+<div id="datos">
+  <h5> +52 55241344126</h5>
+  <h5> +55 23432343</h5>
+  <h5> Avenida Gustavo Baz, Prada, #36, col. Tlalnepantla de Baz, EDOMex.</h5>
+</div>
+  <h5 id="piep">ASHBA COMPANY. Todos los derechos reservados.</h5>
+</div>-->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+</body>
+</html>

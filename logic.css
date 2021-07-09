@@ -1,0 +1,36 @@
+.panel {
+    border: 1px solid red;
+    margin: 5px;
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .card {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    float: left;
+    width: 30%;
+    height: auto;
+  }
+  
+  .product {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .card_image {
+    display: block;
+    width: 300px;
+    height: auto;
+  }
+  
+  .card_image_small {
+    display: block;
+    width: 30px;
+    height: auto;
+  }
