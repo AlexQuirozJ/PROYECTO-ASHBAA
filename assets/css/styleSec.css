@@ -1,0 +1,68 @@
+body{
+    margin:0;
+}
+
+nav{
+    background: #FA6148;
+    color: #f9f7ed;
+    display: auto;
+    height: 70px;}
+    
+/*.header label */
+/*colores:
+blanco F9F7ED
+amarillo FAB246
+rojo FA6148
+azul 98C8D6
+morado 716087*/
+
+.navbar-brand {
+    background: #FA6148;
+    color:#f9f7ed;
+    display: inline-block;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.buscador{
+    border: 2px ;
+    margin-top: 20px;
+    
+}
+
+.flex-container{
+    display: flex;
+    flex-flow:  row wrap;
+    background-color: #f9f7ed;
+    padding: 10px;
+    border:2px #f9f9f9;
+    flex-direction: row;
+    justify-content: center, 80%;
+}
+
+.card {
+    
+    display: inline-block;
+    flex-direction: row;
+    margin: 50px;
+}
+
+
+.card-body {
+    
+    border: 2px, black;
+    margin: 5%;
+    width: 250px;
+}
+
+.img{
+    width: 200px;
+}
+
+
+.footer{
+    background: #FA6148;
+    padding: 15px;
+    text-align: center;
+    color: #f9f7ed;
+}
