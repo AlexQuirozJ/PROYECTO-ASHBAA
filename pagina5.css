@@ -45,3 +45,40 @@
     text-decoration: none;
     color: ;
 }
+
+#adds {
+    position: static;
+    display: block;
+    max-width: 400px;
+    padding: 15px 15px 15px 160px;
+    margin: 2rem 0;
+    overflow: hidden;
+    font-size: .8125rem;
+    line-height: 1.4;
+    text-align: left;
+    background-color: rgba(0,0,0,0.05);
+}
+
+#walmart{
+    float: left;
+    margin-left:50px;
+    width: 260px;
+    padding: 0px 0px 0px 5px;
+    margin-top: 50px;
+    }
+
+#amazon{
+        float: left;
+        margin-left:210px;
+        width: 260px;
+        padding: 10px 0px 0px 35px;
+        margin-top: 50px;
+        }
+
+#coppel{
+            float: left;
+            margin-left:970px;
+            width: 230px;
+            padding: 0px 0px 0px 15px;
+            margin-top: 5px;
+            }
