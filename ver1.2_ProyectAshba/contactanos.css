@@ -28,8 +28,8 @@ h1 {
 }
 
 #form1 {
-  background: #98c8d6;
-  color: #f9f7ed;
+  background: #0DBAD5;
+  color: black;
   width: 30%;
   padding: 10px 0;
   border-radius: 10px;
@@ -51,7 +51,7 @@ form.grupo {
 input,
 textarea {
   background: #f9f7ed;
-  color: #c6c6c6;
+  color: black;
   font-size: 18px;
   padding-left: 10px 10px 10px 5px;
   display: block;
@@ -64,7 +64,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  color: rgb(94, 93, 93);
+  color: black;
 }
 
 .barra {
@@ -95,4 +95,10 @@ textarea:focus {
   color: #fff;
   margin: 10px auto;
   cursor: pointer;
+}
+
+.navbar{
+  border-radius: 0px 0px 30px 30px;
+  width: 1240px;
+  margin-left: 10px;
 }

@@ -1,12 +1,11 @@
-.container{
-    width: 100%;
-    max-width: 1200px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center ;
-    margin: auto;
+#GrupoCards{
+    margin-left: 20px;
+    border-radius: 40px;
+    margin-top: 50px;
+    height:500px;
+   
 }
+
 .container .card{
     width: 330px;
     height: 430px;
@@ -16,6 +15,7 @@
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
+    float: left;
 }
 .container .card:hover{
     transform: translateY(-15px);
@@ -36,61 +36,71 @@
 .container .card a{
     font-weight: 500;
     text-decoration: none;
+}
+
+#img{
+    padding: 50px;
+    width: 300px;
+    margin-left: 40px;
+}
+
+.btn{
+    margin-left: 150px;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0, 0, 0, 0.2);
+
     
 }
-#adds {
-    position: static;
-    display: block;
-    max-width: 400px;
-    padding: 15px 15px 15px 160px;
-    margin: 2rem 0;
-    overflow: hidden;
-    font-size: .8125rem;
-    line-height: 1.4;
-    text-align: left;
-    background-color: rgba(0,0,0,0.05);
-}
+
 #walmart{
     float: left;
-    margin-left:160px;
+    margin-left: 130px;
+
     width: 260px;
     padding: 0px 0px 0px 5px;
-    margin-top: 55px;
+    margin-top: 50px;
+   
 }
+
 #amazon{
     float: left;
-    margin-left:80px;
+    margin-left: 120px;
+  
     width: 260px;
     padding: 10px 0px 0px 35px;
     margin-top: 50px;
+    
 }
+
 #coppel{
-    float: left;
-    margin-left:90px;
+    margin-left: 900px;
     width: 230px;
     padding: 0px 0px 0px 15px;
-    margin-top: 60px;
-} 
-            
-#propaganda1{
-    width: 1260px;
-    height: 300px;
+    margin-top: 65px;
+   
+}
+
+#parrafo{
+    color: #64A7B1;
+    text-align: center;
     margin-top: 50px;
+    padding: 60px;
+
 }
 
 #fondo{
-    background-color:rgba(245, 222, 179, 0.308);;
-    text-align: center;
-    height: 200px;
-    color: #fa6148;
-    padding: 50px;
+background-color:rgba(245, 222, 179, 0.308);
+width: 1260px;
+height: 200px;
+
 }
-#propaganda1{
-    
-    width: 1260px;
-    height: 300px;
-    margin-top: 1000px;
-    }
+
+#DESPLEGABLE {
+    height: 60px;
+}
 
 #video{
     margin-left: 120px;
@@ -101,7 +111,29 @@
 #video2{
     margin-left: 130px;
     margin-top: 30px;
- 
+
+  
+}
+
+#propaganda1{
+    
+width: 1260px;
+height: 300px;
+margin-top: 50px;
+}
+
+.card-title{
+    text-align: center;
+}
+.container  .card{
+    margin-top: 50px;
+    transition: all 0.25s;
+}
+#aside1{
+    margin-top: 50px;
+    width: 275px;
+    float: left;
+    border-style: ridge;
 }
 
 .navbar{
