@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <title></title>
+    <link rel="stylesheet" href="resBusqueda.css">
+</head>
+
+<body>
+    <!-- Barra Navegadora -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-info" id="DESPLEGABLE">
+        <a class="navbar-brand" href="http://127.0.0.1:5500/ASHBA.html/ver1.2_ProyectAshba/Ana.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--Aqui esta el boton de mi lista-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mi lista <span class="sr-only">(current)</span></a>
+                </li>
+                <!--Aqui esta el boton de iniciar sesión-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Iniciar Sesion</a>
+                </li>
+                <!--Aqui esta como usar la pagina-->
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Recomendaciones
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">¿Como usar la pagina</a>
+
+                    </div>
+                </li>
+
+            </ul>
+            <!--Aqui esta el boton de busqueda-->
+            <form class="form-inline my-2 my-lg-1">
+                <input class="form-control mr-sm-1" type="search" placeholder="¿Que buscas?" aria-label="Search"
+                    id="label">
+                <button class="btn btn-outline-dark my-2 my-sm-0 ml-2" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav clas>
+
+    <!--Aqui estan los logos de las tiendas-->
+    <div id="fondo">
+        <p id="parrafo" class="h1">¡Estos son los resultados con los mejores precios!</p>
+    </div>
+    <div id="walmart">
+        <img src="IMAGENES-A/logo-Walmart.png" width="200" height="50">
+    </div>
+    <div id="amazon">
+        <img src="IMAGENES-A/Amazon-Logo.png" width="200" height="50">
+    </div>
+    <div id="coppel">
+        <img src="IMAGENES-A/Coppel_logo.png" width="200" height="50">
+    </div>
+
+    <!--Aqui empiezan las targetas-->
+    <div class="container">
+        <div class="card">
+            <img src="IMAGENES-A/SM1.PNG">
+            <h3>Redmi 9A </h3>
+            <p>Smartphone Redmi 9A 32GB Azul Xiaomi Desbloqueado</p>
+            <p style="color: red">$2,163</p>
+            <a href="https://www.walmart.com.mx/celulares/smartphones/celulares-desbloqueados/smartphone-redmi-9a-32gb-azul-xiaomi-desbloqueado_00694105964840?gclid=Cj0KCQjwub-HBhCyARIsAPctr7zEbdPpQCJCBW_TOFBW3Yp6_7IFgcmtMGXkRAfxm4mHYXo0tjwgekwaArGAEALw_wcB">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="IMAGENES-A/SM2.PNG">
+            <h3>Iphone 12 Pro</h3>
+            <p>Apple Nuevo iPhone 12 Pro MAX (512 GB) - Color Plata</p>
+            <p style="color: red">$37,999</p>
+            <a href="https://www.amazon.com.mx/Apple-Nuevo-iPhone-Pro-512-GB/dp/B08L7SV3DM/ref=asc_df_B08L7SV3DM/?tag=gledskshopmx-20&linkCode=df0&hvadid=485909450106&hvpos=&hvnetw=g&hvrand=7253832481665473117&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9073969&hvtargid=pla-1156459743483&psc=1">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="IMAGENES-A/SM3.PNG">
+            <h3>Moto G30</h3>
+            <p>Celular Motorola Moto G30 128 GB Gris</p>
+            <p style="color: red">$4,999</p>
+            <a href="https://www.coppel.com/celular-motorola-moto-g30-128-gb-gris-pm-2265293">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="IMAGENES-A/SM4.PNG">
+            <h3>Galaxy A12</h3>
+            <p>Smartphone Samsung Galaxy A12 64Gb Negro Samsung Desbloqueado</p>
+            <p style="color: red">$3,339</p>
+            <a href="https://www.walmart.com.mx/celulares/smartphones/celulares-desbloqueados/smartphone-samsung-galaxy-a12-64gb-negro-samsung-desbloqueado_00880609212102?gclid=Cj0KCQjwub-HBhCyARIsAPctr7xedb4LwjNZfuJ63ircrs4jkJNWeqM64Sy2lR3llrqBH9DTHMrFOLUaAuWVEALw_wcB">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="IMAGENES-A/SM5.PNG">
+            <h3>OnePlus</h3>
+            <p>OnePlus - Teléfono celular 8T 5G KB2000, Memoria RAM de 12 GB, 256 GB, color plateado lunar</p>
+            <p style="color: red">$14,339.96</p>
+            <a href="https://www.amazon.com.mx/OnePlus-Tel%C3%A9fono-celular-plateado-internacional/dp/B085J1CPD1/ref=asc_df_B085J1CPD1/?tag=gledskshopmx-20&linkCode=df0&hvadid=495898528768&hvpos=&hvnetw=g&hvrand=7253832481665473117&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9073969&hvtargid=pla-1052071760397&psc=1">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="IMAGENES-A/SM6.PNG">
+            <h3>Galaxy A72</h3>
+            <p>AT&T/Unefon Samsung Galaxy A72 128 GB Negro</p>
+            <p style="color: red">$10,999</p>
+            <a href="https://www.coppel.com/celulares/equipos-celulares/celulares-att/atandt-unefon-samsung-galaxy-a72-128-gb-negro-pm-2300723">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="IMAGENES-A/SM7.PNG">
+            <h3>Galaxy A12</h3>
+            <p>Smartphone Samsung Galaxy A12 64Gb Rojo Samsung Desbloqueado</p>
+            <P style="color: red">$3,339</P>
+            <a href="https://www.walmart.com.mx/celulares/smartphones/celulares-desbloqueados/smartphone-samsung-galaxy-a12-64gb-rojo-samsung-desbloqueado_00880609212103?gclid=Cj0KCQjwub-HBhCyARIsAPctr7x17UHG5MR8Uz8BeGe1opayK0eR84OmMu2Guaho-lHmkpiYvl_JNYgaAnAoEALw_wcB">Comprar</a>
+        </div>
+
+        <div class="card ">
+            <img src="IMAGENES-A/SM8.PNG">
+            <h3>Blackview</h3>
+            <p>Blackview Smartphone Resistente al Agua Desbloqueado</p>
+            <p style="color: red">$3,956.98</p>
+            <a href="https://www.amazon.com.mx/Blackview-Smartphone-Resistente-Desbloqueado-Atardecer/dp/B09298LYX8/ref=asc_df_B09298LYX8/?tag=gledskshopmx-20&linkCode=df0&hvadid=526121202224&hvpos=&hvnetw=g&hvrand=7253832481665473117&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9073969&hvtargid=pla-1299430384281&psc=1">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="IMAGENES-A/SM9.PNG">
+            <h3>Huawei</h3>
+            <p>Telcel Huawei Y7A 64 GB Rosa</p>
+            <p style="color: red">$4,889</p>
+            <a href="https://www.coppel.com/telcel-huawei-y7a-64-gb-rosa-pm-2100713?epaRT=12716843163&gclid=Cj0KCQjwub-HBhCyARIsAPctr7yiePhn0r_u-goXJXy5T5iHlfV1arSIOc8apu0zWgs8EdlNzmFvHwUaAtufEALw_wcB#fo_c=2274&fo_k=b81e1aff9e71ebae24164ee7ab30fe62&fo_s=gplamx">Comprar</a>
+        </div>
+
+    </div>
+
+    <!--propaganda-->
+    <div id="propaganda1">
+   
+        <video src="https://media.istockphoto.com/videos/glass-cosmetic-empty-jar-with-white-lid-on-an-isolated-pink-bottle-video-id1261452582" autoplay muted loop  height="250" id="video"></video>
+         <video src="https://media.istockphoto.com/videos/creative-designer-working-on-a-logo-design-video-id1016416732" autoplay muted loop  height="250" id="video2"></video>
+        
+        </div>
+
+   <!--FORMA DE AGUA EN LA PARTE DE ABAJO CON SVG-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="SVG"><path fill="#5EB1BE" fill-opacity="1" d="M0,64L26.7,96C53.3,128,107,192,160,208C213.3,224,267,192,320,160C373.3,128,427,96,480,106.7C533.3,117,587,171,640,197.3C693.3,224,747,224,800,234.7C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,224C1173.3,181,1227,107,1280,69.3C1333.3,32,1387,32,1413,32L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+
+    
+
+
+    <!--links vinculados al formato-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>
+        src = "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity = "sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin = "anonymous"
+    </script>
+
+</body>
+
+</html>
