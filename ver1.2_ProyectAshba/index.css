@@ -121,12 +121,12 @@ transform: translate(-50%, -50%);
     }
  }
  /* imagenes de las cards */
- .card__imagen-comp{background-image: url(../IMAGENES-A/computadoras.jpeg);}
- .card__imagen-smart{ background-image: url(../IMAGENES-A/smartphone.jpeg);}
- .card__imagen-tablet{background-image: url(../IMAGENES-A/tablet.jpg);}
- .card__imagen-pantalla{background-image: url(../IMAGENES-A/pantallaP.jpg);}
- .card__imagen-imp{background-image: url(../IMAGENES-A/impresora.png);}
- .card__imagen-aud{background-image: url(../IMAGENES-A/auriculares.jpg);}
+ .card__imagen-comp{background-image: url(assets/IMAGENES-A/computadoras.jpeg);}
+ .card__imagen-smart{ background-image: url(assets/IMAGENES-A/smartphone.jpeg);}
+ .card__imagen-tablet{background-image: url(assets/IMAGENES-A/tablet.jpg);}
+ .card__imagen-pantalla{background-image: url(assets/IMAGENES-A/pantallaP.jpg);}
+ .card__imagen-imp{background-image: url(assets/IMAGENES-A/impresora.png);}
+ .card__imagen-aud{background-image: url(assets/IMAGENES-A/auriculares.jpg);}
 .card__imagen{
     height: 80%;
     background-size: 100% 100%;
@@ -134,6 +134,6 @@ transform: translate(-50%, -50%);
 }
 .slider{
     height: 600px;
-    background-image: url(../IMAGENES-A/Instrucciones_de_comparador6.gif);
+    background-image: url(assets/IMAGENES-A/Instrucciones_de_comparador6.gif);
     background-size: cover;
 }
