@@ -68,7 +68,7 @@ input:focus,textarea:focus{
 }
 
 .barra::before{
-    content: ;
+    
     height: 2px;
     width: 0;
     bottom: 0;
@@ -95,6 +95,7 @@ button{
     background-color:rgba(245, 222, 179, 0.308);
     width: 1260px;
     height: 200px;
+}
 
     .navbar{
         border-radius: 0px 0px 30px 30px;
