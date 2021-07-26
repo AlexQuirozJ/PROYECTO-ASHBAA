@@ -28,7 +28,7 @@ h1 {
 }
 
 #form1 {
-  background: #0DBAD5;
+  background: #64a7b1;
   color: black;
   width: 30%;
   padding: 10px 0;
@@ -95,10 +95,4 @@ textarea:focus {
   color: #fff;
   margin: 10px auto;
   cursor: pointer;
-}
-
-.navbar{
-  border-radius: 0px 0px 30px 30px;
-  width: 1240px;
-  margin-left: 10px;
 }
