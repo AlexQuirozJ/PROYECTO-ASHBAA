@@ -171,3 +171,13 @@
   float: left;
   border-style: ridge;
 }
+.mi_grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 768px) {
+  .mi_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
