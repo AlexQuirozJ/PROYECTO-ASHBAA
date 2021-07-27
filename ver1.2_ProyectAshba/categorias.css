@@ -32,6 +32,7 @@ h5 {
   font-family: var(--FuenteHeading);
 }
 
+
 .responsive-banner {
   margin: 80px auto;
   width: 40%;
@@ -176,4 +177,25 @@ textarea {
 
 #btn {
   margin-top: 10px;
+}
+
+.container2 {
+  background-color: rgba(179, 219, 245, 0.308);
+  margin-top: 30px;
+}
+/*Boton de la barra de navegacion*/
+.boton {
+  position: relative;
+  margin-right: 20px;
+}
+.boton__contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contenedorfav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
