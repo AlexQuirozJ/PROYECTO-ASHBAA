@@ -65,7 +65,7 @@
               Alex Quiroz
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="perfiluser.css">Perfil</a>
+              <a class="dropdown-item" href="perfiluser.html">Perfil</a>
               <a class="dropdown-item" href="#">Cambiar contraseña</a>
               <a class="dropdown-item" href="#">Cerrar sesión</a>
             </div>
@@ -125,132 +125,215 @@
 
     <!--Perfil Principal-->
     <div class="container2 m-auto p-5">
-      <img
-        src="./assets/IMAGENES-A/PerfilMisterio.png"
-        class="img-fluid img-thumbnail float-left"
-        alt="Foto de perfil"
-        style="width: 12%; height: 100px"
-      />
-      <p class="h2">Alex Quiroz</p>
-      <p class="h5">alex@quiroz.com</p>
-      <p class="h5">25/12/1997</p>
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <img
+            src="./assets/IMAGENES-A/PerfilMisterio.png"
+            class="img-fluid float-left rounded-circle"
+            alt="Foto de perfil"
+            style="width: 150px; height: 150px"
+          />
+        </div>
+        <div class="col">
+          <p class="h2">Alex Quiroz</p>
+          <p class="h5">alex@quiroz.com</p>
+          <p class="h5">25/12/1997</p>
+        </div>
+      </div>
     </div>
     <!--Perfil Principal-->
 
-    <!--Favoritos-->
+    <div class="contenedorfav">
+      <!--Favoritos-->
 
-    <div class="container p-4">
-      <div class="tarjetas_grid">
-        <p class="h3">Mis favoritos</p>
-        <!--Contenedor básico para favoritos-->
-        <div class="card animacion box m-2" style="width: 60%; height: 120px">
-          <div class="container">
-            <img
-              src="./assets/IMAGENES-A/cel1.PNG"
-              class="img-fluid float-left"
-              alt="Celular"
-              style="width: 14%; height: 115px"
-            />
-            <p class="h3 text-center">Galaxy A31</p>
-            <p class="h6 text-center">
-              Smartphone Samsung Galaxy A31 64 GB Negro Desbloqueado
-            </p>
+      <div class="container p-4">
+        <div class="tarjetas_grid">
+          <p class="h3">Mis favoritos</p>
+          <!--Contenedor básico para favoritos-->
+          <div
+            class="card animacion box m-2"
+            style="width: 100%; height: 120px"
+          >
             <div class="container">
-              <div class="row d-flex justify-content-around">
-                <p class="h6">Samsung</p>
-                <p class="h6">$5,897.00</p>
-                <p class="h6">Amazon</p>
-                <a
-                  href="https://www.amazon.com.mx/SAMSUNG-Galaxy-SM-A315G-Prism-Crush/dp/B087H3M6NR/ref=sr_1_5?dchild=1&qid=1625627528&refinements=p_n_condition-type%3A21214164011%2Cp_89%3ASAMSUNG&rnid=11790855011&s=electronics&sr=1-5"
-                >
-                  <p class="h6">Comprar</p>
-                </a>
+              <img
+                src="./assets/IMAGENES-A/cel1.PNG"
+                class="img-fluid float-left"
+                alt="Celular"
+                style="width: 65px; height: 115px"
+              />
+              <div class="row">
+                <div class="col">
+                  <p class="h3 text-center">Galaxy A31</p>
+                </div>
+                <!--Imagen SVG favoritos-->
+                <div class="col-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!--Imagen SVG favoritos-->
+              <p class="h6 text-center">
+                Smartphone Samsung Galaxy A31 64 GB Negro Desbloqueado
+              </p>
+              <div class="container">
+                <div class="row d-flex justify-content-around">
+                  <p class="h6">Samsung</p>
+                  <p class="h6">$5,897.00</p>
+                  <p class="h6">Amazon</p>
+                  <a
+                    href="https://www.amazon.com.mx/SAMSUNG-Galaxy-SM-A315G-Prism-Crush/dp/B087H3M6NR/ref=sr_1_5?dchild=1&qid=1625627528&refinements=p_n_condition-type%3A21214164011%2Cp_89%3ASAMSUNG&rnid=11790855011&s=electronics&sr=1-5"
+                  >
+                    <p class="h6">Comprar</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!--Contenedor básico para favoritos-->
-        <div class="card animacion box m-2" style="width: 60%; height: 120px">
-          <div class="container">
-            <img
-              src="./assets/IMAGENES-A/lap1.PNG"
-              class="img-fluid float-left"
-              alt="Celular"
-              style="width: 28%; height: 115px"
-            />
-            <p class="h3 text-center">HP</p>
-            <p class="h6 text-center">
-              HP Stream 14 pulgadas, Intel Celeron N4000, 4 GB RAM, 64 GB eMMC,
-              Windows
-            </p>
+          <!--Contenedor básico para favoritos-->
+          <div
+            class="card animacion box m-2"
+            style="width: 100%; height: 120px"
+          >
             <div class="container">
-              <div class="row d-flex justify-content-around">
-                <p class="h6">HP</p>
-                <p class="h6">$6,815.69</p>
-                <p class="h6">Amazon</p>
-                <a
-                  href="https://www.amazon.com.mx/HP-port%C3%A1til-pulgadas-14-cb186nr-brillante/dp/B084SMMH96/ref=asc_df_B084SMMH96/?tag=gledskshopmx-20&linkCode=df0&hvadid=522669728157&hvpos=&hvnetw=g&hvrand=18353039541832619554&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9073969&hvtargid=pla-1014587203377&psc=1"
-                >
-                  <p class="h6">Comprar</p>
-                </a>
+              <img
+                src="./assets/IMAGENES-A/lap1.PNG"
+                class="img-fluid float-left"
+                alt="Celular"
+                style="width: 145px; height: 115px"
+              />
+              <div class="row">
+                <div class="col">
+                  <p class="h3 text-center">Laptop HP</p>
+                </div>
+                <!--Imagen SVG favoritos-->
+                <div class="col-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!--Imagen SVG favoritos-->
+              <p class="h6 text-center">
+                HP Stream 14 pulgadas, Intel Celeron N4000, 4 GB RAM, 64 GB
+                eMMC, Windows
+              </p>
+              <div class="container">
+                <div class="row d-flex justify-content-around">
+                  <p class="h6">HP</p>
+                  <p class="h6">$6,815.69</p>
+                  <p class="h6">Amazon</p>
+                  <a
+                    href="https://www.amazon.com.mx/HP-port%C3%A1til-pulgadas-14-cb186nr-brillante/dp/B084SMMH96/ref=asc_df_B084SMMH96/?tag=gledskshopmx-20&linkCode=df0&hvadid=522669728157&hvpos=&hvnetw=g&hvrand=18353039541832619554&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9073969&hvtargid=pla-1014587203377&psc=1"
+                  >
+                    <p class="h6">Comprar</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!--Contenedor básico para favoritos-->
-        <div class="card animacion box m-2" style="width: 60%; height: 120px">
-          <div class="container">
-            <img
-              src="./assets/IMAGENES-A/tele1.PNG"
-              class="img-fluid float-left"
-              alt="Celular"
-              style="width: 30%; height: 115px"
-            />
-            <p class="h3 text-center">Pantalla LG</p>
-            <p class="h6 text-center">
-              TV 50 Pulgadas 4K Ultra HD Smart TV LED 50UN6958ZUF
-            </p>
+          <!--Contenedor básico para favoritos-->
+          <div
+            class="card animacion box m-2"
+            style="width: 100%; height: 120px"
+          >
             <div class="container">
-              <div class="row d-flex justify-content-around">
-                <p class="h6">LG</p>
-                <p class="h6">$8,999.00</p>
-                <p class="h6">Walmart</p>
-                <a
-                  href="https://www.walmart.com.mx/tv-y-video/pantallas/4k-ultra-hd/tv-lg-50-pulgadas-4k-ultra-hd-smart-tv-led-50un6958zuf_00880609111832"
-                >
-                  <p class="h6">Comprar</p>
-                </a>
+              <img
+                src="./assets/IMAGENES-A/tele1.PNG"
+                class="img-fluid float-left"
+                alt="Celular"
+                style="width: 150px; height: 115px"
+              />
+              <div class="row">
+                <div class="col">
+                  <p class="h3 text-center">Pantalla LG</p>
+                </div>
+                <!--Imagen SVG favoritos-->
+                <div class="col-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!--Imagen SVG favoritos-->
+              <p class="h6 text-center">
+                TV 50 Pulgadas 4K Ultra HD Smart TV LED 50UN6958ZUF
+              </p>
+              <div class="container">
+                <div class="row d-flex justify-content-around">
+                  <p class="h6">LG</p>
+                  <p class="h6">$8,999.00</p>
+                  <p class="h6">Walmart</p>
+                  <a
+                    href="https://www.walmart.com.mx/tv-y-video/pantallas/4k-ultra-hd/tv-lg-50-pulgadas-4k-ultra-hd-smart-tv-led-50un6958zuf_00880609111832"
+                  >
+                    <p class="h6">Comprar</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+          <!--Contenedor básico para favoritos-->
         </div>
-        <!--Contenedor básico para favoritos-->
       </div>
-    </div>
 
-    <!--Listas-->
+      <!--Listas-->
 
-    <div class="container p-4">
-      <div class="tarjetas_grid">
-        <p class="h3">Mis listas</p>
-        <div class="card animacion box p-3" style="width: 35%; height: 300px">
-          <!--¿Podemos usar iFrame y vincularla con el archivo de listas?-->
+      <div class="container p-4">
+        <div class="tarjetas_grid">
+          <p class="h3">Mis listas</p>
+          <div
+            class="card animacion box p-3"
+            style="width: 100%; height: 270px"
+          >
+            <!--¿Podemos usar iFrame y vincularla con el archivo de listas?-->
 
-          <p class="h3">Regalo para papá</p>
-          <p class="h6">Posibles regalos para papá</p>
-          <a href="../listas/listas.html">
-            <p class="h6">Ver más</p>
-          </a>
+            <p class="h3">Regalo para papá</p>
+            <p class="h6">Posibles regalos para papá</p>
+            <a href="listas_act.html">
+              <p class="h6">Ir a lista</p>
+            </a>
 
-          <hr />
+            <hr />
 
-          <p class="h3">Por comprar</p>
-          <p class="h6">Para cuando ahorre...</p>
-          <a href="../listas/listas.html">
-            <p class="h6">Ver más</p>
-          </a>
+            <p class="h3">Por comprar</p>
+            <p class="h6">Para cuando ahorre...</p>
+            <a href="listas_act.html">
+              <p class="h6">Ir a lista</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
