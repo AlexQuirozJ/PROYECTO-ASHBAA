@@ -18,6 +18,12 @@ body {
 }
 h1 {
   font-family: var(--FuenteHeading);
+  font-size: 4rem;
+}
+@media (max-width: 768px) {
+   h1{
+     font-size: 3rem;
+   }
 }
 h2 {
   font-family: var(--FuenteHeading);
@@ -32,15 +38,11 @@ h5 {
   font-family: var(--FuenteHeading);
 }
 
-
 .responsive-banner {
   margin: 80px auto;
-  width: 40%;
-  min-width: 230px;
-  max-width: 330px;
+  width: 100%;
   position: relative;
-  min-height: 300px;
-  max-height: 500px;
+ height: 500px;
   border-radius: 10px;
   overflow: hidden;
   background-image: linear-gradient(to bottom right, #d45ba1, #a784e0);
@@ -105,6 +107,9 @@ span:before {
   bottom: -70px;
   right: -70px;
 }
+.letra{
+  font-family: var(--FuenteHeading);
+}
 
 /* p {
   clear: both;
@@ -147,6 +152,15 @@ a.more-link {
   -o-transition: 0.1s all ease-in-out;
   transition: 0.1s all ease-in-out;
 }
+@media (max-width: 968px) {
+  a.more-link{
+   font-size: 10px; 
+  }
+   .p2{
+     font-size: 15px;
+   }
+}
+
 a.more-link:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -178,24 +192,30 @@ textarea {
 #btn {
   margin-top: 10px;
 }
-
-.container2 {
-  background-color: rgba(179, 219, 245, 0.308);
-  margin-top: 30px;
-}
-/*Boton de la barra de navegacion*/
-.boton {
-  position: relative;
-  margin-right: 20px;
-}
-.boton__contenido {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.contenedorfav {
+.grid__cat{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 15% 63% 15%;
+  gap: 2rem;
+  align-items: center;
+}
+.btn__flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+   .grid__cat{
+    display: flex;
+    flex-direction: column;
+   }
+   .responsive-banner{
+    height: 120px;
+   }
+   .contenido_banner{
+     display: flex;
+     flex-direction: row;
+   }
+   .anuncio_imagen{
+     width: 20%;
+   }
 }
