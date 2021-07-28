@@ -1,3 +1,14 @@
+:root {
+  /*Letra*/
+  --FuenteHeading: 'Lobster', cursive;
+  --FuenteNormal: 'Quicksand', sans-serif;
+  /*Colores*/
+  --ColorSeleccion: #053136d0;
+  --ColorContraste: #7ec544;
+
+  --colorTextos: #49454567;
+}
+
 *,
 ::before,
 ::after {
@@ -9,7 +20,7 @@
 body {
   background: #f9f7ed;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--FuenteNormal);
   width: 100%;
   height: 650px;
 
@@ -17,30 +28,45 @@ body {
   align-items: center;
 }
 
-:root {
-  --colorTextos: #49454567;
-}
 
 h1 {
   text-align: center;
   margin: 10px 0;
-  font-weight: 800;
+  font-family: var(--FuenteHeading);
+}
+
+label{
+  font-family: var(--FuenteNormal);
+}
+input{
+  font-family: var(--FuenteNormal);
 }
 
 #form1 {
-  background: #64a7b1;
+  background-image: url(https://img.freepik.com/vector-gratis/circuitos-fondo-digital-degradado-azul-rojo_23-2148821701.jpg?size=626&ext=jpg);
+  background-size: cover;
   color: black;
-  width: 30%;
-  padding: 10px 0;
+  width: 50%;
+  margin: 0 20%;
   border-radius: 10px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  margin-left: 450px;
-  margin-top: 50px;
 }
-
+@media (max-width: 768px) {
+  #form1 {
+   width: 70%;
+  }
+}
+@media (max-width: 508px) {
+  #form1 {
+    margin: 0 5%;
+    width: 90%;
+   }
+}
 .form {
-  width: 50%;
+  padding: 2rem;
+  width: 100%;
   margin: auto;
+  background-color: rgba(0, 134, 175, 0.671);
 }
 
 form.grupo {
@@ -115,4 +141,34 @@ textarea:focus {
 .contenedorfav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.inputs_formato{
+  padding: 0.3rem;
+  border: 1px rgb(230, 230, 230) solid;
+  border-radius: 7px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+   .boton{
+     width: 100%;
+   }
+}
+.error{
+  background-color: rgb(255, 200, 211);
+  color: #ff0033;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
+}
+.correct{
+  background-color: rgb(211, 255, 200);
+  color: #3cff00;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
 }
