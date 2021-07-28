@@ -1,121 +1,141 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="categorias.css">
-        <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+    name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-        <title>Gamas y Rangos</title>
-    </head>
-    <body>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <!--Fuentes externas-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="categorias.css">
+  
+    <title>Gamas y Rangos</title>
+</head>
 
-        <!-- Barra Navegadora -->
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-info" >
-        <a class="navbar-brand" href="http://127.0.0.1:5500/ASHBA.html/ver1.2_ProyectAshba/Ana.html">Inicio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mi lista <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Iniciar Sesion</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Recomendaciones
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">¿Como usar la pagina</a>
-                
-              </div>
-            </li>
-           
-          </ul>
-          <form class="form-inline my-2 my-lg-1">
-            <input class="form-control mr-sm-1" type="search" placeholder="¿Que buscas?" aria-label="Search" id="label">
-            <button class="btn btn-outline-dark my-2 my-sm-0 ml-2" type="submit">Buscar</button>
-          </form>
-        </div>
-      </nav>
-    
-      <!-- Aquí termina la barra navegadora -->
-      
-        <table>
-        <th>
-            <aside class="responsive-banner">
-                <span class="circle-a"></span>
-                <span class="circle-b"></span>
-                <img src="https://i.pinimg.com/originals/97/6e/c4/976ec4f38121bec2209f6e12ff776547.png" />
-                <div class="container-envelope">
-                        
-                <div class="col-xs-12">
-                <p>Live Sites using our WordPress Themes</p>
-                <a target="_blank" href="https://www.silocreativo.com/en/showcase/" class="more-link">Get inspired</a>
-        </aside>
-        </th>
-
-        <th text-align="center">
-        <h1 id="title" style="color: #64A7B1">Encuentra el mejor precio en un soló lugar</h1>
-        <h2 id="title" style="color: #64A7B1">Elige la gama</h2>
-        <p1">
-        <a href="" class="button3" >Gama baja</a>
-        <a href="" class="button4" >Gama media</a>
-        <a href="" class="button5" >Gama alta</a>
-        </p1>
-        <br><br>
-        <h2 style="color: #64A7B1">Elige el rango de precios</h2>
+  <!-- Barra Navegadora -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="DESPLEGABLE">
+    <!--Busqueda- Imagen SVG-->
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <!--Fin de Busqueda- Imagen SVG-->
+  <!--Elemntos del nav-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mi lista <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="loginvista.html">Inicia sesión o regístrate</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Recomendaciones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="contactanos.html">Contáctanos</a>
+            
+          </div>
+        </li>
        
-        <a href="http://127.0.0.1:5500/ASHBA.html/ver1.2_ProyectAshba/RES-CELULAR.html" class="button6" >$1000 - $2,000</a>
-        <a href="http://127.0.0.1:5500/ASHBA.html/ver1.2_ProyectAshba/RES-CELULAR.html" class="button7" >$2,000 - $4,000</a>
-        <a href="http://127.0.0.1:5500/ASHBA.html/ver1.2_ProyectAshba/RES-CELULAR.html" class="button8"  >$4,000 - $8,000</a>
-        <br><br><br><br><br><br>
-       
-        <a href="" class="button9" >¡QUIERO EL MEJOR PRECIO!</a>
-        <br><br><br><br>
-        <a href="" class="button10">Volver a categorias</a>
-        </th>
- 
-        <th>
-            <aside class="responsive-banner">
+      </ul>
+      <form class="form-inline my-2 my-lg-1">
+        <a href="resBusquedaS.html"
+        class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton" type="submit"><p class="boton__contenido"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg></p></a>
+        <input class="form-control mr-sm-1" type="search" placeholder="¿Que buscas?" aria-label="Search" id="label">
+      </form>
+    </div>
+  </nav>
+  <!--Fin de los elementos del nav-->
+  <!-- Aquí termina la barra navegadora -->
+
+<div class="container">
+  <div class="grid__cat">
+    <!--Publicidad lado izquierdo-->
+    <div class="grid__cat-p1"> 
+      <aside class="responsive-banner">
+        <div class="contenido_banner">
             <span class="circle-a"></span>
-            <span class="circle-b"></span>
-            <img src="https://i.pinimg.com/originals/97/6e/c4/976ec4f38121bec2209f6e12ff776547.png" />
-            <div class="container-envelope">
-                
-                <div class="col-xs-12">
-                <p>Live Sites using our WordPress Themes</p>
-                <a target="_blank" href="https://www.silocreativo.com/en/showcase/" class="more-link">Get inspired</a>
-               
-            </aside>
-            </th>
+        <span class="circle-b"></span>
+        <img  class="anuncio_imagen" src="https://i.pinimg.com/originals/97/6e/c4/976ec4f38121bec2209f6e12ff776547.png" />
+        <div class="container-envelope">
+          
+          <div class="col-xs-12">
+            <p class="p2">Live Sites using our WordPress Themes</p>
+            <a target="_blank" href="https://www.silocreativo.com/en/showcase/" class="more-link">Get inspired</a>
+        </div>
+      
+          </aside>
+       </div> 
+        <!--Publicidad lado izquierdo-->
 
-        </table>
+    <div class="grid__cat-op">
+      
+      <div class="container2 text-center m-auto">
+        <h1 style="color: #64A7B1">
+          Elige el rango de precios
+        </h1>
+      </div>
+        
+<br><br>
+<div class="btn__flex">
+<a class="btn btn-outline-info m-1" href="RES-CELULAR.html" role="button">$1,000.00 - $2,000.00</a>        
+<a class="btn btn-outline-danger m-1" href="RES-CELULAR.html" role="button">$2,000.00 - $4,000.00</a>        
+<a class="btn btn-outline-warning m-1" href="RES-CELULAR.html" role="button">$4,000.00 - $8,000.00</a>  
+</div>
+</div>
 
-        <!--FORMA DE AGUA EN LA PARTE DE ABAJO CON SVG-->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="SVG"><path fill="#5EB1BE" fill-opacity="1" d="M0,64L26.7,96C53.3,128,107,192,160,208C213.3,224,267,192,320,160C373.3,128,427,96,480,106.7C533.3,117,587,171,640,197.3C693.3,224,747,224,800,234.7C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,224C1173.3,181,1227,107,1280,69.3C1333.3,32,1387,32,1413,32L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+
+    <div class="grid__cat-p2">
+      <aside class="responsive-banner">
+        <div class="contenido_banner">
+            <span class="circle-a"></span>
+        <span class="circle-b"></span>
+        <img  class="anuncio_imagen" src="https://i.pinimg.com/originals/97/6e/c4/976ec4f38121bec2209f6e12ff776547.png" />
+        <div class="container-envelope">
+          
+          <div class="col-xs-12">
+            <p class="p2">Live Sites using our WordPress Themes</p>
+            <a target="_blank" href="https://www.silocreativo.com/en/showcase/" class="more-link">Get inspired</a>
+        </div>
+      
+          </aside>
+        </div>
+  </div>
+</div>
+    
+ 
+<!--FORMA DE AGUA EN LA PARTE DE ABAJO CON SVG-->
 
 
-        <script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"
-      ></script>
-    </body>
+<footer>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="SVG"><path fill="#5EB1BE" fill-opacity="1" d="M0,64L26.7,96C53.3,128,107,192,160,208C213.3,224,267,192,320,160C373.3,128,427,96,480,106.7C533.3,117,587,171,640,197.3C693.3,224,747,224,800,234.7C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,224C1173.3,181,1227,107,1280,69.3C1333.3,32,1387,32,1413,32L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+</footer>
+
+<!-- Este es el js para activar los botones
+   <script src="./assets/script.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
