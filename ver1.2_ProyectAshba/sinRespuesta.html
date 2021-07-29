@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!--Fuentes externas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index-inicio.css">
+    <title>Comparador de Precios</title>
+  </head>
+  <body>
+    
+    <!-- Barra Navegadora -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="DESPLEGABLE">
+      <!--Busqueda- Imagen SVG-->
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!--Fin de Busqueda- Imagen SVG-->
+    <!--Elemntos del nav-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mi lista <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="loginvista.html">Inicia sesión o regístrate</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Recomendaciones
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="contactanos.html">Contáctanos</a>
+              
+            </div>
+          </li>
+         
+        </ul>
+        <form class="form-inline my-2 my-lg-1">
+          <a href="resBusquedaS.html"
+          class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton" type="submit"><p class="boton__contenido"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="10" cy="10" r="7" />
+            <line x1="21" y1="21" x2="15" y2="15" />
+          </svg></p></a>
+          <input class="form-control mr-sm-1" type="search" placeholder="¿Que buscas?" aria-label="Search" id="label">
+        </form>
+      </div>
+    </nav>
+    <!--Fin de los elementos del nav-->
+    <!-- Aquí termina la barra navegadora -->
+
+
+</div>
+    <!--Encabezado-->
+    <div class="container2 text-center m-auto p-5">
+      <p class="h1" style="color: #64A7B1">
+        ¡Lo sentimos! Tu búsqueda no arrojó ningún resultado
+      </p>
+
+      <p class="h3 text-center" style="color: #64A7B1">
+        Te recomendamos buscar en las siguientes categorías
+      </p>
+    </div>
+    
+    <!--Empiezan imágenes de categorías-->
+    
+    <div class="container">
+      <div class="tarjetas_grid">
+           <!--Card de computadoras-->
+      <div class="card animacion box" style="width: 90%; height: 300px;">
+        <div class="card__imagen  card__imagen-comp">
+
+        </div>
+        <div class="card-body">
+          <h4 class="card-text">Computadoras</h4>
+          <div class="capa">
+            <h3>Computadoras</h3>
+            <p>Busca la computadora que necesitas, al mejor precio</p>
+         <h5><a href="RES-LAPTOPS.html" class="enlace__tarjeta">Ver más</a></h5>
+       
+        </div>
+      </div>
+    </div>
+         <!--Card de computadoras-->
+         <!--Card de Smarthphones-->
+         <div class="card animacion box" style="width: 90%; height: 300px;">
+          <div class="card__imagen  card__imagen-smart">
+  
+          </div>
+          <div class="card-body">
+            <h4 class="card-text">Smartphones</h4>
+            <div class="capa">
+              <h3>Smarthpones</h3>
+              <p>¿Necesitas un teléfono urgentemente? Obtén el mejor precio dando click aquí</p>
+           <h5><a href="categorias.html" class="enlace__tarjeta">Ver más</a></h5>
+         
+          </div>
+        </div>
+      </div>
+    <!--Card de Smarthphones-->
+     <!--Card de Tablet-->
+     <div class="card animacion box" style="width: 90%; height: 300px;">
+      <div class="card__imagen  card__imagen-tablet">
+
+      </div>
+      <div class="card-body">
+        <h4 class="card-text">Tablet</h4>
+        <div class="capa">
+          <h3>Tablet</h3>
+          <p>Encuentra los mejores precios en Tablets</p>
+       <h5><a href="RES-TABLETAS.html" class="enlace__tarjeta">Ver más</a></h5>
+     
+      </div>
+    </div>
+  </div>
+<!--Card de Tablet-->
+   <!--Card de Pantalla-->
+   <div class="card animacion box" style="width: 90%; height: 300px;">
+    <div class="card__imagen card__imagen-pantalla">
+
+    </div>
+    <div class="card-body">
+      <h4 class="card-text">Pantalla</h4>
+      <div class="capa">
+        <h3>Pantalla</h3>
+        <p>Ya nos busques más, encuentra la mejor pantalla, al mejor precio</p>
+     <h5><a href="RES-PANTALLA.html" class="enlace__tarjeta">Ver más</a></h5>
+   
+    </div>
+  </div>
+</div>
+<!--Card de Pantalla-->
+         <!--Card de impresoras-->
+         <div class="card animacion box" style="width: 90%; height: 300px;">
+          <div class="card__imagen  card__imagen-imp" style="margin: 0 20px;">
+  
+          </div>
+          <div class="card-body">
+            <h4 class="card-text">Impresoras</h4>
+            <div class="capa">
+              <h3>Impresoras</h3>
+              <p>Una buena impresora y a precio justo, la encuentras fácilmente en este lugar</p>
+           <h5><a href="RES-IMPRESORAS.html" class="enlace__tarjeta">Ver más</a></h5>
+         
+          </div>
+        </div>
+      </div>
+           <!--Card de impresoras-->
+           <!--Card de Audifonos-->
+           <div class="card animacion box" style="width: 90%; height: 300px;">
+            <div class="card__imagen  card__imagen-aud" style="margin: 0 40px;">
+    
+            </div>
+            <div class="card-body">
+              <h4 class="card-text">Audífonos</h4>
+              <div class="capa">
+                <h3>Audífonos</h3>
+                <p>Escuchaste bien, consigue esos audífonos, sin gastar demasiado</p>
+             <h5><a href="RES-AURI.html" class="enlace__tarjeta">Ver más</a></h5>
+           
+            </div>
+          </div>
+        </div>
+      <!--Card de Audifonos-->
+  </div>
+<!--Terminan las categorias-->
+    </div>
+    </div>
+    
+<!--FORMA DE AGUA EN LA PARTE DE ABAJO CON SVG-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="SVG"><path fill="#5EB1BE" fill-opacity="1" d="M0,64L26.7,96C53.3,128,107,192,160,208C213.3,224,267,192,320,160C373.3,128,427,96,480,106.7C533.3,117,587,171,640,197.3C693.3,224,747,224,800,234.7C853.3,245,907,267,960,272C1013.3,277,1067,267,1120,224C1173.3,181,1227,107,1280,69.3C1333.3,32,1387,32,1413,32L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html
