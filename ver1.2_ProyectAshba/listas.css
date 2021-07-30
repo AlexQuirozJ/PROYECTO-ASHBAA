@@ -1,5 +1,22 @@
-/*CODIGO DE LOS BANNER*/
 
+:root {
+  /*Letra*/
+  --FuenteHeading: 'Lobster', cursive;
+  --FuenteNormal: 'Quicksand', sans-serif;
+  /*Colores*/
+  --ColorSeleccion: #053136d0;
+  --ColorContraste: #7ec544;
+
+  --colorTextos: #fdd1d167;
+}
+h1{font-family: var(--FuenteHeading);}
+h2{font-family: var(--FuenteHeading);}
+h3{font-family: var(--FuenteHeading);}
+h4{font-family: var(--FuenteHeading);}
+body{font-family: var(--FuenteNormal);}
+a{font-family: var(--FuenteNormal);}
+p{font-family: var(--FuenteNormal);}
+/*CODIGO DE LOS BANNER*/
 .responsive-banner {
     margin: 80px auto;
     width: 230px;

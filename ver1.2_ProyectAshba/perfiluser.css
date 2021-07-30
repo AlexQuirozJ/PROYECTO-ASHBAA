@@ -18,19 +18,25 @@ body {
 }
 h1 {
   font-family: var(--FuenteHeading);
+  font-size: 3rem;
 }
 h2 {
   font-family: var(--FuenteHeading);
+  font-size: 2.5rem;
 }
 h3 {
   font-family: var(--FuenteHeading);
+  font-size: 2rem;
 }
 h4 {
   font-family: var(--FuenteHeading);
+  font-size: 1.5rem;
 }
 h5 {
   font-family: var(--FuenteHeading);
 }
+a{font-family: var(--FuenteNormal);}
+p{font-family: var(--FuenteNormal);}
 .container2 {
   background-color: rgba(179, 219, 245, 0.308);
   margin-top: 30px;
