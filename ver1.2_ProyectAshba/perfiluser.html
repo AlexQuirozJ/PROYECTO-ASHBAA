@@ -20,10 +20,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="perfiluser.css" />
-
+  
     <title>¡Bienvenido!</title>
   </head>
   <body>
+      
+
+
     <!-- Barra Navegadora -->
     <nav
       class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark"
@@ -72,7 +75,25 @@
           </li>
         </ul>
 
-       
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Alex Quiroz
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="perfiluser.html">Perfil</a>
+            <a class="dropdown-item" href="#">Cambiar contraseña</a>
+            <a class="dropdown-item" href="#">Cerrar sesión</a>
+          </div>
+        </li>
+         <!--Se cambio de lugar el perdil de usuario, a un lado del buscador-->
 
         <form class="form-inline my-2 my-lg-1">
           <a
@@ -108,40 +129,35 @@
             aria-label="Search"
             id="label"
           />
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Alex Quiroz
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="perfiluser.html">Perfil</a>
-              <a class="dropdown-item" href="#">Cambiar contraseña</a>
-              <a class="dropdown-item" href="#">Cerrar sesión</a>
-            </div>
-          </li>
+         
         </form>
       </div>
     </nav>
-    <!--Se cambio de lugar el perdil de usuario, a un lado del buscador-->
+  
 
   
     <!--Fin de los elementos del nav-->
     <!-- Aquí termina la barra navegadora -->
 
     <!--Perfil Principal-->
+
+    
+               <!--Boton para subir fotografia-->
+              <form action="" method="post">
+                <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg">
+                <div id="preview" clas="styleImage"></div>
+              </form>
+              <script src="perfiluser.js"></script>
+
+          
+            <!--Aqui termina el boton para subir fotografia-->
+
     <div class="container2 m-auto p-5">
       <div class="row no-gutters">
         <div class="col-md-3">
           <img
             src="./assets/IMAGENES-A/PerfilMisterio.png"
-            class="img-fluid float-left rounded-circle"
+            class="img-fluid float- rounded-circle"
             alt="Foto de perfil"
             style="width: 150px; height: 150px"
           />
