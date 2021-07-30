@@ -189,13 +189,33 @@ p{font-family: var(--FuenteNormal);}
   float: left;
   border-style: ridge;
 }
-.mi_grid{
+.mi_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 @media (max-width: 768px) {
-  .mi_grid{
+  .mi_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.error {
+  background-color: rgb(255, 200, 211);
+  color: #ff0033;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
+}
+.correct {
+  background-color: rgb(211, 255, 200);
+  color: #3cff00;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
 }
