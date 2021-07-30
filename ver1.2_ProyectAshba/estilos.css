@@ -1,9 +1,27 @@
+
+:root {
+    /*Letra*/
+    --FuenteHeading: 'Lobster', cursive;
+    --FuenteNormal: 'Quicksand', sans-serif;
+    /*Colores*/
+    --ColorSeleccion: #053136d0;
+    --ColorContraste: #7ec544;
+  
+    --colorTextos: #fdd1d167;
+  }
+  h1{font-family: var(--FuenteHeading);}
+  h2{font-family: var(--FuenteHeading);}
+  h3{font-family: var(--FuenteHeading);}
+  h4{font-family: var(--FuenteHeading);}
+  a{font-family: var(--FuenteNormal);}
+  p{font-family: var(--FuenteNormal);}
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
    background: url(imagen.jpg);
     background-size: cover;
     background-attachment: fixed;
+    font-family: var(--FuenteNormal);
 }
 * {
     box-sizing: border-box;
