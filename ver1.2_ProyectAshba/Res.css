@@ -199,3 +199,6 @@ p{font-family: var(--FuenteNormal);}
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.imagen_bus{
+object-fit: contain;
+}
