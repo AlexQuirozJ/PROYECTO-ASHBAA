@@ -158,3 +158,13 @@ h5 {
   background-image: url(assets/IMAGENES-A/Instrucciones_de_comparador.gif);
   background-size: cover;
 }
+.error{
+  background-color: rgb(255, 200, 211);
+  color: #ff0033;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
+}

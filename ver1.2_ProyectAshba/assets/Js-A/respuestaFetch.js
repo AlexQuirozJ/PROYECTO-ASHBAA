@@ -2,7 +2,7 @@ const productosMostrados = document.getElementById('productosMostrados');
 
 const cargarProductos = async () => {
   try {
-    const res = await fetch('http://localhost:8080/products/query?Categoria=IMPRESORAS');
+    const res = await fetch('http://hp-api.herokuapp.com/api/characters');
     let productosLista = await res.json();
     displayProductos(productosLista);
   } catch (err) {
@@ -10,22 +10,19 @@ const cargarProductos = async () => {
   }
 };
 
-
 const displayProductos = (productos) => {
   const htmlString = productos
-    .map((product) => {
+    .map((producto) => {
       return `
       <div class="container producto">
           
               <div class="card mx-auto">
-            <a href="${product.link_pagina}">
-           
-            <img src="${product.imagen}" id="imgAPI" s>
+            <a href="https://www.walmart.com.mx/celulares/smartphones/celulares-desbloqueados/smartphone-samsung-galaxy-a31-64-gb-negro-desbloqueado_00880609040245" title="Comprar en Walmart" target="_blank">
+            <img src="${producto.image}" id="img">
           </a>
-            <p style="font-family: Arial, Helvetica, sans-serif;">${product.name}</p>
-            <h4 style="font-family: Arial, Helvetica, sans-serif;"><strong>${product.marca}</strong></h4>
-            <p style="font-family: Arial, Helvetica, sans-serif;">${product.tienda}</p>
-            <p style="color: red"><b>$${product.precio}.00</b></p>            
+            <p>${producto.name}</p>
+            <p>${producto.house}</p>
+            <p style="color: red"><b>$${producto.yearOfBirth}</b></p>            
         </div>
         </div>
         `;
