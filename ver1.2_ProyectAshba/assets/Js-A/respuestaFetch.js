@@ -2,7 +2,7 @@ const productosMostrados = document.getElementById('productosMostrados');
 
 const cargarProductos = async () => {
   try {
-    const res = await fetch('http://localhost:8080/products/query?Categoria=IMPRESORAS');
+    const res = await fetch('http://localhost:8080/products/query?Categoria=PANTALLAS');
     let productosLista = await res.json();
     displayProductos(productosLista);
   } catch (err) {
