@@ -2,7 +2,11 @@ const productosMostrados = document.getElementById('productosMostrados');
 
 const cargarProductos = async () => {
   try {
+<<<<<<< HEAD
+    const res = await fetch('http://localhost:8080/products/query?Categoria=PANTALLAS');
+=======
     const res = await fetch('http://hp-api.herokuapp.com/api/characters');
+>>>>>>> ac78567438fd70ec5cf7e266fed9696514c53684
     let productosLista = await res.json();
     displayProductos(productosLista);
   } catch (err) {
