@@ -71,6 +71,12 @@ h5 {
   text-decoration: none;
 }
 
+#imgAPI{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
 #img {
   padding: 25px;
   width: 260px;
