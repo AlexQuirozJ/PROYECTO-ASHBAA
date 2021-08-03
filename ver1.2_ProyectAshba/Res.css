@@ -8,14 +8,30 @@
 
   --colorTextos: #fdd1d167;
 }
-h1{font-family: var(--FuenteHeading);}
-h2{font-family: var(--FuenteHeading);}
-h3{font-family: var(--FuenteHeading);}
-h4{font-family: var(--FuenteHeading);}
-h4{font-family: var(--FuenteHeading);}
-body{font-family: var(--FuenteNormal);}
-a{font-family: var(--FuenteNormal);}
-p{font-family: var(--FuenteNormal);}
+h1 {
+  font-family: var(--FuenteHeading);
+}
+h2 {
+  font-family: var(--FuenteHeading);
+}
+h3 {
+  font-family: var(--FuenteHeading);
+}
+h4 {
+  font-family: var(--FuenteHeading);
+}
+h4 {
+  font-family: var(--FuenteHeading);
+}
+body {
+  font-family: var(--FuenteNormal);
+}
+a {
+  font-family: var(--FuenteNormal);
+}
+p {
+  font-family: var(--FuenteNormal);
+}
 #GrupoCards {
   margin-left: 20px;
   border-radius: 40px;
@@ -155,9 +171,9 @@ p{font-family: var(--FuenteNormal);}
   height: 200px;
 }
 
-#DESPLEGABLE {
+/* #DESPLEGABLE {
   height: 60px;
-}
+} */
 
 #video {
   margin-left: 120px;
@@ -199,6 +215,16 @@ p{font-family: var(--FuenteNormal);}
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.imagen_bus{
-object-fit: contain;
+.imagen_bus {
+  object-fit: contain;
+}
+.boton {
+  position: relative;
+  margin-right: 20px;
+}
+.boton__contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

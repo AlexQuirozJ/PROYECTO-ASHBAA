@@ -1,4 +1,3 @@
-
 :root {
   /*Letra*/
   --FuenteHeading: 'Lobster', cursive;
@@ -9,13 +8,27 @@
 
   --colorTextos: #fdd1d167;
 }
-h1{font-family: var(--FuenteHeading);}
-h2{font-family: var(--FuenteHeading);}
-h3{font-family: var(--FuenteHeading);}
-h4{font-family: var(--FuenteHeading);}
-body{font-family: var(--FuenteNormal);}
-a{font-family: var(--FuenteNormal);}
-p{font-family: var(--FuenteNormal);}
+h1 {
+  font-family: var(--FuenteHeading);
+}
+h2 {
+  font-family: var(--FuenteHeading);
+}
+h3 {
+  font-family: var(--FuenteHeading);
+}
+h4 {
+  font-family: var(--FuenteHeading);
+}
+body {
+  font-family: var(--FuenteNormal);
+}
+a {
+  font-family: var(--FuenteNormal);
+}
+p {
+  font-family: var(--FuenteNormal);
+}
 /*CODIGO DE LOS BANNER*/
 .responsive-banner {
   margin: 80px auto;
@@ -31,7 +44,7 @@ p{font-family: var(--FuenteNormal);}
   color: #fff;
 }
 
-img {
+.imagen {
   width: 230px;
   height: 150px;
   margin-top: 30px;
@@ -74,7 +87,11 @@ img {
   margin-left: 20px;
 }
 
-#checkbox1, #checkbox2, #checkbox3, #checkbox4, #checkbox5 {
+#checkbox1,
+#checkbox2,
+#checkbox3,
+#checkbox4,
+#checkbox5 {
   margin-left: 370px;
 }
 
@@ -97,8 +114,6 @@ h3 {
 h2 {
   color: red;
 }
-<<<<<<< HEAD
-=======
 
 .error {
   background-color: rgb(255, 200, 211);
@@ -119,4 +134,14 @@ h2 {
   transition: 0.5s;
   font-family: var(--FuenteHeading);
 }
->>>>>>> 6f3a24a25e3ffa0127d05be68070a182b2f4dbcf
+
+.boton {
+  position: relative;
+  margin-right: 20px;
+}
+.boton__contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
