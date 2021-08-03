@@ -155,9 +155,9 @@ p{font-family: var(--FuenteNormal);}
   height: 200px;
 }
 
-#DESPLEGABLE {
+/* #DESPLEGABLE {
   height: 60px;
-}
+} */
 
 #video {
   margin-left: 120px;
@@ -201,4 +201,14 @@ p{font-family: var(--FuenteNormal);}
 }
 .imagen_bus{
 object-fit: contain;
+}
+.boton {
+  position: relative;
+  margin-right: 20px;
+}
+.boton__contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
