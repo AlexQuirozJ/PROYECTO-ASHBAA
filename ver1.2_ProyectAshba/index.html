@@ -25,7 +25,7 @@
     <!-- Barra Navegadora -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="DESPLEGABLE">
       <!--Busqueda- Imagen SVG-->
-      <a class="navbar-brand" href="index.html">Inicio</a>
+      <a class="navbar-brand" href="index.html"><img class="imagen"src="/ver1.2_ProyectAshba/assets/IMAGENES-A/ashba.png" alt="#" height="50px" srcset=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" 
               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
               aria-expanded="false" aria-label="Toggle navigation">
@@ -54,16 +54,41 @@
          
         </ul>
         <form class="form-inline my-2 my-lg-1">
-          <a class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton" type="button" href="respuestaFetch.html"><p class="boton__contenido"  ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <circle cx="10" cy="10" r="7" />
-            <line x1="21" y1="21" x2="15" y2="15" />
-          </svg></p></a>
-          <input class="form-control mr-sm-1" type="search" placeholder="¿Que buscas?" aria-label="Search" id="label" >
+          <a
+            href="#"
+            class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton"
+            type="submit"
+            id="btn_busqueda"
+            ><p class="boton__contenido">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-search"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg></p
+          ></a>
+          <input
+          class="form-control mr-sm-1"
+          type="search"
+          placeholder="¿Que buscas?"
+          aria-label="Search"
+          id="label"
+        />
         </form>
       </div>
     </nav>
     <!--Fin de los elementos del nav-->
+    <div id="alerta"></div>
     <!-- Aquí termina la barra navegadora -->
 <div class="slider">
 
@@ -199,5 +224,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/Js-A/busqueda.js"></script>
   </body>
 </html>
