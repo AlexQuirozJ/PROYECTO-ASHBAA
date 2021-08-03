@@ -73,7 +73,7 @@ function renderizarProductos() {
         miNodoTitle.classList.add('card-title');
         miNodoTitle.textContent = info.nombre;
         // Descripcion
-        const miNododescripcion = document.createElement('p');
+        const miNododescripcion = document.createElement('p2');
         miNododescripcion.classList.add('card-text');
         miNododescripcion.textContent = info.descripcion;
         //Marca
@@ -89,7 +89,7 @@ function renderizarProductos() {
         miNodoImagen.classList.add('img-fluid');
         miNodoImagen.setAttribute('src', info.imagen);
         // Precio
-        const miNodoPrecio = document.createElement('p');
+        const miNodoPrecio = document.createElement('p1');
         miNodoPrecio.classList.add('card-text');
         miNodoPrecio.textContent = info.precio;
         // Boton 
