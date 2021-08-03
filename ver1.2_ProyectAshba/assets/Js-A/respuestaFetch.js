@@ -4,10 +4,12 @@ let busqueda = search.value;
 
 const cargarProductos = async () => {
   try {
+
     const res = await fetch(
       `http://localhost:8080/products/query?name=${busqueda}`
     );
     console.log(res);
+
     let productosLista = await res.json();
     displayProductos(productosLista);
   } catch (err) {
