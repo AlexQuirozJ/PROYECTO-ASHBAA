@@ -1,15 +1,20 @@
 const productosMostrados = document.getElementById('productosMostrados');
 const search = document.getElementById('search');
 let busqueda = search.value;
+const formularioBusqueda = document.querySelector('form');
+
+formularioBusqueda.addEventListener('submit', (e) => {
+  e.preventDefault();
+  productosMostrados.innerHTML = '';
+  cargarProductos(busqueda);
+});
 
 const cargarProductos = async () => {
   try {
-
     const res = await fetch(
       `http://localhost:8080/products/query?name=${busqueda}`
     );
-    console.log(res);
-
+    console.log(`http://localhost:8080/products/query?name=${busqueda}`);
     let productosLista = await res.json();
     displayProductos(productosLista);
   } catch (err) {
@@ -38,4 +43,4 @@ const displayProductos = (products) => {
   productosMostrados.innerHTML = htmlString;
 };
 
-cargarProductos();
+//cargarProductos();
