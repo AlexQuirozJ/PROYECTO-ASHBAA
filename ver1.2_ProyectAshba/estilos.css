@@ -100,6 +100,7 @@ p {
   }
 }
 
+<<<<<<< HEAD
 #button1{
     border: none;
     
@@ -114,6 +115,14 @@ p {
 #button1:hover{
     background: cadetblue;
 }
+=======
+.error {
+  background-color: rgb(255, 200, 211);
+  color: #ff0033;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+>>>>>>> e0ead2a39b9bb2290dd07ad5151c861642eb5cea
 
   transition: 0.5s;
   font-family: var(--FuenteHeading);
