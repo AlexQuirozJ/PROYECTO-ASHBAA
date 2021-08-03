@@ -1,14 +1,14 @@
 const productosMostrados = document.getElementById('productosMostrados');
-const search = document.getElementById('search');
-let busqueda = search.value;
+
 
 const cargarProductos = async () => {
   try {
-
+    const search = document.getElementById('search');
+    let busqueda = search.value;
     const res = await fetch(
-      `http://localhost:8080/products/query?name=${busqueda}`
+      `http://localhost:8080/products/query/?name=${busqueda}`
     );
-    console.log(res);
+    console.log(busqueda);
 
     let productosLista = await res.json();
     displayProductos(productosLista);
