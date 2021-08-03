@@ -1,95 +1,106 @@
-
 :root {
-    /*Letra*/
-    --FuenteHeading: 'Lobster', cursive;
-    --FuenteNormal: 'Quicksand', sans-serif;
-    /*Colores*/
-    --ColorSeleccion: #053136d0;
-    --ColorContraste: #7ec544;
-  
-    --colorTextos: #fdd1d167;
-  }
-  h1{font-family: var(--FuenteHeading);}
-  h2{font-family: var(--FuenteHeading);}
-  h3{font-family: var(--FuenteHeading);}
-  h4{font-family: var(--FuenteHeading);}
-  a{font-family: var(--FuenteNormal);}
-  p{font-family: var(--FuenteNormal);}
+  /*Letra*/
+  --FuenteHeading: 'Lobster', cursive;
+  --FuenteNormal: 'Quicksand', sans-serif;
+  /*Colores*/
+  --ColorSeleccion: #053136d0;
+  --ColorContraste: #7ec544;
+
+  --colorTextos: #fdd1d167;
+}
+h1 {
+  font-family: var(--FuenteHeading);
+}
+h2 {
+  font-family: var(--FuenteHeading);
+}
+h3 {
+  font-family: var(--FuenteHeading);
+}
+h4 {
+  font-family: var(--FuenteHeading);
+}
+a {
+  font-family: var(--FuenteNormal);
+}
+p {
+  font-family: var(--FuenteNormal);
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-   background: url(imagen.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: var(--FuenteNormal);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: url(imagen.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--FuenteNormal);
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-.contenedor{
-    width: 100%;
-    padding: 15px;
+.contenedor {
+  width: 100%;
+  padding: 15px;
 }
-.formulario{
-    background: #fff;
+.formulario {
+  background: #fff;
+  margin-top: 150px;
+  padding: 3px;
+}
+h1 {
+  text-align: center;
+  color: #1a2537;
+  font-size: 40px;
+}
+input[type='text'],
+input[type='password'] {
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+}
+.input-contenedor {
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+}
+.icon {
+  min-width: 50px;
+  text-align: center;
+  color: #999;
+}
+.button {
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: #1a2537;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background: cadetblue;
+}
+p {
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  color: #1a2537;
+  font-weight: 600;
+}
+.link:hover {
+  color: cadetblue;
+}
+@media (min-width: 768px) {
+  .formulario {
+    margin: auto;
+    width: 500px;
     margin-top: 150px;
-    padding: 3px;
-}
-h1{
-    text-align: center;
-    color: #1a2537;
-    font-size: 40px;
-}
-input[type="text"],
-input[type="password"]{
-    font-size: 20px;
-    width: 82%;
-    padding: 10px;
-    border: none;
-}
-.input-contenedor{
-    margin-bottom: 15px;
-    border: 1px solid #aaa;
-}
-.icon{
-    min-width: 50px;
-    text-align: center;
-    color: #999;
-}
-.button{
-    border: none;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    background:  #1a2537;
-    padding: 15px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.button:hover{
-    background: cadetblue;
-}
-p{
-    text-align: center;
-}
-.link{
-    text-decoration: none;
-      color: #1a2537;
-    font-weight: 600;
-}
-.link:hover{
-     color: cadetblue;
-}
-@media(min-width:768px)
-{
-    .formulario{
-        margin: auto;
-        width: 500px;
-        margin-top: 150px;
-        border-radius: 2%;
-    }
+    border-radius: 2%;
+  }
 }
 
+<<<<<<< HEAD
 #button1{
     border: none;
     
@@ -104,26 +115,24 @@ p{
 #button1:hover{
     background: cadetblue;
 }
+=======
+.error {
+  background-color: rgb(255, 200, 211);
+  color: #ff0033;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+>>>>>>> 0c3dae5b826edc7b250af6544fb75f3e574483ee
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
+}
+.correct {
+  background-color: rgb(211, 255, 200);
+  color: #3cff00;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
+}

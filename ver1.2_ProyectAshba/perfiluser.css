@@ -32,11 +32,29 @@ h4 {
   font-family: var(--FuenteHeading);
   font-size: 1.5rem;
 }
+@media (max-width: 800px) {
+   h4{
+    font-size: 1.2rem;
+   }
+}
+@media (min-width: 600px) {
+   h4{
+     font-size: 1rem;
+   }
+}
 h5 {
   font-family: var(--FuenteHeading);
 }
 a{font-family: var(--FuenteNormal);}
-p{font-family: var(--FuenteNormal);}
+p{font-family: var(--FuenteNormal);
+font-size: 1rem;
+margin: 0;}
+@media (max-width: 768px) {
+  p{
+    font-size: 0.7rem;
+  }
+   
+}
 .container2 {
   background-color: rgba(179, 219, 245, 0.308);
   margin-top: 30px;
@@ -55,9 +73,81 @@ p{font-family: var(--FuenteNormal);}
 
 .contenedorfav {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 70% 30%
   
 }
+@media (max-width: 768px) {
+   .contenedorfav{
+     display: flex;
+     flex-direction: column-reverse;
+   }
+}
 
+.imagen{
+  width: 20%; 
+  height: 115px;
+  object-fit: contain;
+}
+.heart {
+  background-image: url(assets/IMAGENES-A/web_heart_animation.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 1800px;
+  cursor: pointer;
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+}
+.heart:hover
+{
+    background-position: right;
+}
 
+@-webkit-keyframes heartTransition
+{
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
 
+@keyframes heartTransition
+{
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+.heart_animate
+{
+    -webkit-animation-duration: .8s;
+    -webkit-animation-iteration-count: 1;
+/*     -webkit-animation-iteration-count: infinite; */
+    -webkit-animation-name: heartTransition;
+    -webkit-animation-timing-function: steps(28);
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+/*     animation-iteration-count: infinite; */
+    animation-name: heartTransition;
+    animation-timing-function: steps(28);
+    background-position: right;
+}
+.c-altura{
+  height: 45px;
+}
+.error {
+  background-color: rgb(255, 200, 211);
+  color: #ff0033;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
+}
+.correct {
+  background-color: rgb(211, 255, 200);
+  color: #3cff00;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
+}
