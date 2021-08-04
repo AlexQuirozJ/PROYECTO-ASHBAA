@@ -8,14 +8,15 @@
   margin: auto;
 }
 .container .card {
-  width: 330px;
-  height: 430px;
+  width: 100%;
+  height: 90%;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
+ 
 }
 .container .card:hover {
   transform: translateY(-15px);
@@ -124,4 +125,15 @@
   height: 40px;
   transition: 0.5s;
   font-family: var(--FuenteHeading);
+}
+.mi_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+@media (max-width: 768px) {
+  .mi_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
