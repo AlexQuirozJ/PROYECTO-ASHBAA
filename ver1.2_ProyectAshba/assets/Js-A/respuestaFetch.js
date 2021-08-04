@@ -1,8 +1,20 @@
 const productosMostrados = document.getElementById('productosMostrados');
+const formularioBusqueda = document.querySelector('form');
 
-const cargarProductos = async () => {
+formularioBusqueda.addEventListener('submit', (e) => {
+  e.preventDefault();
+  productosMostrados.innerHTML = '';
+  const search = document.getElementById('search');
+  let busqueda = search.value;
+  cargarProductos(busqueda);
+});
+
+const cargarProductos = async (busqueda) => {
   try {
-    const res = await fetch('http://localhost:8080/products/query?Categoria=CELULARES');
+    const res = await fetch(
+      `http://localhost:8080/products/query/?name=${busqueda}`
+    );
+    console.log(`http://localhost:8080/products/query/?name=${busqueda}`);
     let productosLista = await res.json();
     displayProductos(productosLista);
   } catch (err) {
@@ -31,4 +43,4 @@ const displayProductos = (products) => {
   productosMostrados.innerHTML = htmlString;
 };
 
-cargarProductos();
+//cargarProductos();

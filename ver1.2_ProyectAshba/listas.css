@@ -1,4 +1,3 @@
-
 :root {
   /*Letra*/
   --FuenteHeading: 'Lobster', cursive;
@@ -9,34 +8,48 @@
 
   --colorTextos: #fdd1d167;
 }
-h1{font-family: var(--FuenteHeading);}
-h2{font-family: var(--FuenteHeading);}
-h3{font-family: var(--FuenteHeading);}
-h4{font-family: var(--FuenteHeading);}
-body{font-family: var(--FuenteNormal);}
-a{font-family: var(--FuenteNormal);}
-p{font-family: var(--FuenteNormal);}
+h1 {
+  font-family: var(--FuenteHeading);
+}
+h2 {
+  font-family: var(--FuenteHeading);
+}
+h3 {
+  font-family: var(--FuenteHeading);
+}
+h4 {
+  font-family: var(--FuenteHeading);
+}
+body {
+  font-family: var(--FuenteNormal);
+}
+a {
+  font-family: var(--FuenteNormal);
+}
+p {
+  font-family: var(--FuenteNormal);
+}
 /*CODIGO DE LOS BANNER*/
 .responsive-banner {
-    margin: 80px auto;
-    width: 230px;
-  
-    height: auto;
-    border-radius: 10px;
-    background-image: linear-gradient(to bottom right, #D45BA1, #A784E0);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  }
+  margin: 80px auto;
+  width: 230px;
+
+  height: auto;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, #d45ba1, #a784e0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 .container-envelope {
-    padding: 35px 15px;
-    color: #fff;
-  }
-  
-img {
-    width:230px;
-    height:150px;
-    margin-top: 30px;
-  }
-  
+  padding: 35px 15px;
+  color: #fff;
+}
+
+.imagen {
+  width: 230px;
+  height: 150px;
+  margin-top: 30px;
+}
+
 /*p {
     clear: both;
     font-family: 'Work Sans', Helvetica, sans-serif;
@@ -56,50 +69,91 @@ img {
     margin-bottom: 20px;
   }*/
 
-  /*CODIGO DE LOS CARDS*/
+/*CODIGO DE LOS CARDS*/
 
-  .card{
-    text-align: center;
-    margin-left: 400px;
-    height: 200px;
-    margin-top: 30px;
-    height: 240px;
-   
-  }
-  
+.card {
+  text-align: center;
+  margin-left: 400px;
+  height: 200px;
+  margin-top: 30px;
+  height: 240px;
+}
 
-  .datos1{
-    float: left;
-    
-    
-  }
-.datos2{
+.datos1 {
+  float: left;
+}
+.datos2 {
   float: left;
   margin-left: 20px;
 }
 
-#checkbox1, #checkbox2, #checkbox3, #checkbox4, #checkbox5 {
+#checkbox1,
+#checkbox2,
+#checkbox3,
+#checkbox4,
+#checkbox5 {
   margin-left: 370px;
 }
 
-h1{
+h1 {
   margin-top: 20px;
   color: #053136d0;
-  
-  
 }
 
-.lateral{
+.lateral {
   float: left;
   width: 230px;
   height: 487px;
   margin-left: 30px;
 }
 
-h3{
+h3 {
   text-align: center;
 }
 
-h2{
-  color:red;
+h2 {
+  color: red;
+}
+
+.error {
+  background-color: rgb(255, 200, 211);
+  color: #ff0033;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
+}
+.correct {
+  background-color: rgb(211, 255, 200);
+  color: #3cff00;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  transition: 0.5s;
+  font-family: var(--FuenteHeading);
+}
+
+.boton {
+  position: relative;
+  margin-right: 20px;
+}
+.boton__contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Boton de la barra de navegacion*/
+.boton {
+  position: relative;
+  margin-right: 20px;
+}
+.boton__contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

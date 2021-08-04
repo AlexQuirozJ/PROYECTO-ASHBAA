@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-    <link rel="stylesheet" href="listas.css">
+
     <!--Fuentes externas-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;500&display=swap" rel="stylesheet"> 
-    
+        <link rel="stylesheet" href="listas.css">
         <title> LISTAS</title>
 </head>
 
 <!-- Barra Navegadora -->
+<<<<<<< HEAD
    
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark"  id="DESPLEGABLE">
-    <a class="navbar-brand" href="index.html">Inicio</a>
+    <a class="navbar-brand" href="index.html"><img src="assets/IMAGENES-A/ashba.png" alt="#" height="50px" srcset=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" 
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
             aria-expanded="false" aria-label="Toggle navigation">
@@ -46,6 +47,11 @@
        
       </ul>
       <form class="form-inline my-2 my-lg-1">
+        <a class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton" type="button" href="respuestaFetch.html"><p class="boton__contenido"  ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg></p></a>
         <input class="form-control mr-sm-1" type="search" placeholder="¿Que buscas?" aria-label="Search" id="label">
         <button class="btn btn-outline-dark my-2 my-sm-0 ml-2" type="submit">Buscar</button>
       </form>
@@ -53,11 +59,80 @@
   </nav>
 
   <!--termina barra-->
+=======
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="DESPLEGABLE">
+  <!--Busqueda- Imagen SVG-->
+  <a class="navbar-brand" href="index.html"><img src="/ver1.2_ProyectAshba/assets/IMAGENES-A/ashba.png" alt="#" height="50px" srcset=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<!--Fin de Busqueda- Imagen SVG-->
+<!--Elemntos del nav-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="listas_act.html">Mi lista <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="loginvista.html">Inicia sesión o regístrate</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Recomendaciones
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contactanos.html">Contáctanos</a>
+          
+        </div>
+      </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-1">
+      <a
+        href="#"
+        class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton"
+        type="submit"
+        id="btn_busqueda"
+        ><p class="boton__contenido">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-search"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="10" cy="10" r="7" />
+            <line x1="21" y1="21" x2="15" y2="15" />
+          </svg></p
+      ></a>
+      <input
+      class="form-control mr-sm-1"
+      type="search"
+      placeholder="¿Que buscas?"
+      aria-label="Search"
+      id="label"
+    />
+    </form>
+  </div>
+</nav>
+<!--Fin de los elementos del nav-->
+<div id="alerta"></div>
+<!-- Aquí termina la barra navegadora -->
+>>>>>>> e0ead2a39b9bb2290dd07ad5151c861642eb5cea
 
   <!-- Primer anuncio -->
   <div class="lateral">
     <aside class="responsive-banner">
-      <img src="https://i.pinimg.com/originals/97/6e/c4/976ec4f38121bec2209f6e12ff776547.png" "/>
+      <img clas="imagen" src="https://i.pinimg.com/originals/97/6e/c4/976ec4f38121bec2209f6e12ff776547.png" style="width: 230px;"/>
       <div class="container-envelope">
 
         <div class="col-xs-12">
@@ -66,7 +141,7 @@
     </aside>
   </div>
 
-  <h1 style="margin-left: 400px">MI LISTA</h1>
+  <h1 style="margin-left: 400px">Mi Lista</h1>
   
 
   <!--PRODUCTOS EN LISTA DEL USUARIO LOGEADO-->
@@ -75,7 +150,7 @@
 <div class="card mb-3" style="max-width: 690px;" >
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="assets/IMAGENES-A/jbl1.jpg" alt="...">
+        <img class="imagen" src="assets/IMAGENES-A/jbl1.jpg" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -96,7 +171,7 @@
 
   <div class="card mb-3" style="max-width: 690px;">    <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="assets/IMAGENES-A/jbl2.jpg" alt="...">
+        <img class="imagen" src="assets/IMAGENES-A/jbl2.jpg" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -116,7 +191,7 @@
    <!-- SEGUNDO ANUNCION -->
    <div class="lateral">
     <aside class="responsive-banner">
-      <img src="https://i.pinimg.com/originals/97/6e/c4/976ec4f38121bec2209f6e12ff776547.png" "/>
+      <img class="imagen" src="https://i.pinimg.com/originals/97/6e/c4/976ec4f38121bec2209f6e12ff776547.png" style="width: 230px;"/>
       <div class="container-envelope">
 
         <div class="col-xs-12">
@@ -128,7 +203,7 @@
   <div class="card mb-3" style="max-width: 690px;">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="assets/IMAGENES-A/jbl3.jpg" alt="...">
+        <img class="imagen" src="assets/IMAGENES-A/jbl3.jpg" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -147,7 +222,7 @@
   <div class="card mb-3" style="max-width: 690px;">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="assets/IMAGENES-A/kaiser1.jpg" alt="...">
+        <img class="imagen" src="assets/IMAGENES-A/kaiser1.jpg" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -166,7 +241,7 @@
   <div class="card mb-5"  style="max-width: 690px">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="assets/IMAGENES-A/kaiser2.jpg" alt="...">
+        <img class="imagen" src="assets/IMAGENES-A/kaiser2.jpg" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
