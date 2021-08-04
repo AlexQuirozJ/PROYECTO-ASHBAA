@@ -10,13 +10,24 @@
 }
 h1 {
   font-family: var(--FuenteHeading);
+  font-size: 3rem
+}
+@media (max-width: 766px) {
+   h1{
+     font-size: 2.3rem;
+   }
+}
+@media (min-width: 468px) {
+   
 }
 h2 {
   font-family: var(--FuenteHeading);
 }
 h3 {
   font-family: var(--FuenteHeading);
+  font-size: 1.4rem;
 }
+
 h4 {
   font-family: var(--FuenteHeading);
 }
@@ -31,6 +42,12 @@ a {
 }
 p {
   font-family: var(--FuenteNormal);
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+   p{
+     font-size: 0.8rem;
+   }
 }
 #GrupoCards {
   margin-left: 20px;
@@ -40,22 +57,21 @@ p {
 }
 
 .container .card {
-  width: 330px;
-  height: 430px;
+  width: 90%;
+  height: 410px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 20px;
   text-align: center;
   transition: all 0.25s;
-  float: left;
+/*   float: left; */
 }
 .container .card:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgb(0, 0, 0, 0.2);
 }
 .container .card img {
-  width: 330px;
+  width: 100%;
   height: 220px;
 }
 .container .card h3 {
@@ -63,7 +79,6 @@ p {
 }
 .container .card p {
   padding: 0 1rem;
-  font-size: 16px;
   font-weight: 300;
 }
 .container .card a {
@@ -88,14 +103,8 @@ p {
 
 /* Prueba para cards */
 
-.container .card img {
-  width: 330px;
-  height: 220px;
-}
-
 .container .card p {
   padding: 0 1rem;
-  font-size: 16px;
   font-weight: 300;
 }
 .container .card a {
@@ -135,7 +144,6 @@ p {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
 }
 
 /* Haciendolo responsivo */
@@ -165,44 +173,15 @@ p {
   padding: 60px;
 }
 
-#fondo {
-  background-color: rgba(245, 222, 179, 0.308);
-  width: 1260px;
-  height: 200px;
-}
-
-/* #DESPLEGABLE {
-  height: 60px;
-} */
-
-#video {
-  margin-left: 120px;
-  margin-top: 30px;
-  float: left;
-}
-
-#video2 {
-  margin-left: 130px;
-  margin-top: 30px;
-}
-
-#propaganda1 {
-  width: 1260px;
-  height: 300px;
-  margin-top: 50px;
-}
-
 .card-title {
   text-align: center;
 }
 .container .card {
-  margin-top: 50px;
   transition: all 0.25s;
 }
 #aside1 {
   margin-top: 50px;
   width: 275px;
-  float: left;
   border-style: ridge;
 }
 .mi_grid {
@@ -228,5 +207,24 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
+.imagen__celular{
+  width: 100%;
+  object-fit: contain;
+}
+.imagen-contenedor{
+  height: 80px;
+  width: 100%;
+  object-fit: contain;
+}
+.video-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+@media (max-width: 1000px) {
+  video{
+    margin-top: 20px;
+    width: 100%;
+  }
+   
+}
