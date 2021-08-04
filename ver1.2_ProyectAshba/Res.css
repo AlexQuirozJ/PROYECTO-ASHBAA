@@ -187,6 +187,7 @@ p {
 .mi_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 @media (max-width: 768px) {
   .mi_grid {

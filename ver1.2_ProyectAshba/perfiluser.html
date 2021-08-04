@@ -24,6 +24,8 @@
     <title>¡Bienvenido!</title>
   </head>
   <body>
+      
+
 
  <!-- Barra Navegadora -->
  <nav
@@ -142,11 +144,11 @@
 <!--Fin de los elementos del nav-->
 <!-- Aquí termina la barra navegadora -->
 
+
     <!--Perfil Principal-->
 
     <!--Boton para subir fotografia-->
     <form action="" method="post">
-      <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg" />
       <div id="preview" clas="styleImage"></div>
     </form>
     <script src="perfiluser.js"></script>
@@ -156,12 +158,24 @@
     <div class="container2 m-auto p-5">
       <div class="row no-gutters">
         <div class="col-md-3">
+          <div class="add-new-photo" id="add-foto">
+           <p class="icono" id="camara"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera-plus" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="13" r="3" />
+            <path d="M5 7h2a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h2m9 7v7a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+            <line x1="15" y1="6" x2="21" y2="6" />
+            <line x1="18" y1="3" x2="18" y2="9" />
+          </svg></p>
+          </div>
           <img
+            id="fotito"
             src="./assets/IMAGENES-A/PerfilMisterio.png"
             class="img-fluid float- rounded-circle"
             alt="Foto de perfil"
             style="width: 150px; height: 150px"
           />
+         
+          <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg" />
         </div>
         <div class="col">
           <h2>Alex Quiroz</h2>

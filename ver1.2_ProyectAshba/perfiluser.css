@@ -151,3 +151,20 @@ margin: 0;}
   transition: 0.5s;
   font-family: var(--FuenteHeading);
 }
+#file{
+  display: none;
+}
+.add-new-photo{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  margin-top: 120px;
+  background-color: rgb(41, 70, 109);
+  border-radius: 50%;
+}
+.icono{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+
+}
