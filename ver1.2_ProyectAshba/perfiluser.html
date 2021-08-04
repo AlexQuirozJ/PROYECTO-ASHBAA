@@ -24,7 +24,6 @@
     <title>¡Bienvenido!</title>
   </head>
   <body>
-<<<<<<< HEAD
       
 
 
@@ -113,104 +112,11 @@
 <!--Fin de los elementos del nav-->
 <!-- Aquí termina la barra navegadora -->
 
-=======
-    <!-- Barra Navegadora -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark"
-      id="DESPLEGABLE"
-    >
-      <!--Busqueda- Imagen SVG-->
-      <a class="navbar-brand" href="index.html"
-        ><img
-          src="/ver1.2_ProyectAshba/assets/IMAGENES-A/ashba.png"
-          alt="#"
-          height="50px"
-          srcset=""
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--Fin de Busqueda- Imagen SVG-->
-      <!--Elemntos del nav-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="listas_act.html"
-              >Mi lista <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="loginvista.html"
-              >Inicia sesión o regístrate</a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Recomendaciones
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="contactanos.html">Contáctanos</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-1">
-          <a
-            href="resBusquedaS.html"
-            class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton"
-            type="submit"
-            ><p class="boton__contenido">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-search"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                stroke-width="2.5"
-                stroke="#ffffff"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="10" cy="10" r="7" />
-                <line x1="21" y1="21" x2="15" y2="15" />
-              </svg></p
-          ></a>
-          <input
-            class="form-control mr-sm-1"
-            type="search"
-            placeholder="¿Que buscas?"
-            aria-label="Search"
-            id="label"
-          />
-        </form>
-      </div>
-    </nav>
-    <!--Fin de los elementos del nav-->
-    <!-- Aquí termina la barra navegadora -->
->>>>>>> e0ead2a39b9bb2290dd07ad5151c861642eb5cea
 
     <!--Perfil Principal-->
 
     <!--Boton para subir fotografia-->
     <form action="" method="post">
-      <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg" />
       <div id="preview" clas="styleImage"></div>
     </form>
     <script src="perfiluser.js"></script>
@@ -220,12 +126,24 @@
     <div class="container2 m-auto p-5">
       <div class="row no-gutters">
         <div class="col-md-3">
+          <div class="add-new-photo" id="add-foto">
+           <p class="icono" id="camara"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera-plus" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="13" r="3" />
+            <path d="M5 7h2a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h2m9 7v7a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+            <line x1="15" y1="6" x2="21" y2="6" />
+            <line x1="18" y1="3" x2="18" y2="9" />
+          </svg></p>
+          </div>
           <img
+            id="fotito"
             src="./assets/IMAGENES-A/PerfilMisterio.png"
             class="img-fluid float- rounded-circle"
             alt="Foto de perfil"
             style="width: 150px; height: 150px"
           />
+         
+          <input type="file" name="file" id="file" accept=".jpg,.png,.jpeg" />
         </div>
         <div class="col">
           <h2>Alex Quiroz</h2>
