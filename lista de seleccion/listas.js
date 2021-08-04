@@ -3,31 +3,46 @@ const baseDeDatos = [
     {
         id: 1,
         nombre: 'JBL JBLXTREME2BLKAM',
+        descripcion: 'JBL JBLXTREME2BLKAM Bocina Inalámbrica, color Negro',
         precio: 1999,
+        marca: 'JBL',
+        tienda: 'AMAZON',
         imagen: 'https://m.media-amazon.com/images/I/81dJA2VmHgL._AC_SL1500_.jpg'
     },
     {
         id: 2,
         nombre: 'JBL JBLXTREME2BLKAM',
+        descripcion: 'JBL Jbl xtreme 2 portable waterproof wireless bluetooth speaker red, 5.4 Pound',
         precio: 4499,
+        marca: 'JBL',
+        tienda: 'AMAZON',
         imagen: 'https://m.media-amazon.com/images/I/71H05DbBxWL._AC_SL1000_.jpg'
     },
     {
         id: 3,
-        nombre: 'BL CHARGE 4BLKAM Bocina',
+        nombre: 'JBL CHARGE 4BLKAM Bocina',
+        descripcion: 'JBL JBLCHARGE4BLKAM Bocina, Negro',
         precio: 2695,
+        marca: 'JBL',
+        tienda: 'AMAZON',
         imagen: 'https://m.media-amazon.com/images/I/71Cg0EbAWQL._AC_SL1500_.jpg'
     },
     {
         id: 4,
-        nombre: 'Kaiser Bocina',
+        nombre: 'Kaiser Bocina KSR Rojo',
+        descripcion: 'Kaiser Bocina KSR-Link con Bluetooth Color Rojo',
         precio: 399,
+        marca: 'KAISER',
+        tienda: 'AMAZON',
         imagen: 'https://m.media-amazon.com/images/I/51ksK2u8SML._AC_SL1000_.jpg'
     },
     {
         id: 5,
-        nombre: 'Kaiser Bocina',
+        nombre: 'Kaiser Bocina KSR Negro',
+        descripcion: 'Kaiser Bocina KSR-Link Recargable con Bluetooth Color Negro',
         precio: 4499,
+        marca: 'KAISER',
+        tienda: 'AMAZON',
         imagen: 'https://ss630.liverpool.com.mx/xl/1092889099.jpg'
     }
 
@@ -57,25 +72,46 @@ function renderizarProductos() {
         const miNodoTitle = document.createElement('h5');
         miNodoTitle.classList.add('card-title');
         miNodoTitle.textContent = info.nombre;
+        // Descripcion
+        const miNododescripcion = document.createElement('p2');
+        miNododescripcion.classList.add('card-text');
+        miNododescripcion.textContent = info.descripcion;
+        //Marca
+        const miNodomarca = document.createElement('h6');
+        miNodomarca.classList.add('card-text');
+        miNodomarca.textContent = info.marca;
+        //Tienda
+        const miNodotienda = document.createElement('p');
+        miNodotienda.classList.add('card-text');
+        miNodotienda.textContent = info.tienda;
         // Imagen
-        const miNodoImagen = document.createElement('img');
+        const miNodoImagen = document.createElement('img', 'max-height: 100%')
         miNodoImagen.classList.add('img-fluid');
         miNodoImagen.setAttribute('src', info.imagen);
         // Precio
-        const miNodoPrecio = document.createElement('p');
+        const miNodoPrecio = document.createElement('p1');
         miNodoPrecio.classList.add('card-text');
         miNodoPrecio.textContent = info.precio;
         // Boton 
         const miNodoBoton = document.createElement('button');
         miNodoBoton.classList.add('btn', 'btn-primary');
-        miNodoBoton.textContent = '+';
+        miNodoBoton.textContent = 'Guardar';
         miNodoBoton.setAttribute('marcador', info.id);
         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
+        // Boton2
+        const miNodoBoton2 = document.createElement('button');
+        miNodoBoton2.classList.add('btn', 'btn-outline-warning');
+        miNodoBoton2.textContent = 'Comprar';
         // Insertamos
         miNodoCardBody.appendChild(miNodoImagen);
         miNodoCardBody.appendChild(miNodoTitle);
+        miNodoCardBody.appendChild(miNododescripcion);
+        miNodoCardBody.appendChild(miNodomarca);
         miNodoCardBody.appendChild(miNodoPrecio);
+        miNodoCardBody.appendChild(miNodotienda);
         miNodoCardBody.appendChild(miNodoBoton);
+        miNodoCardBody.appendChild(miNodoBoton2);
+        
         miNodo.appendChild(miNodoCardBody);
         DOMitems.appendChild(miNodo);
     });
@@ -116,7 +152,7 @@ function renderizarCarrito() {
         }, 0);
         // Creamos el nodo del item del carrito
         const miNodo = document.createElement('li');
-        miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
+        miNodo.classList.add('list-group-item', 'text-center', 'mx-2');
         miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}`;
         // Boton de borrar
         const miBoton = document.createElement('button');

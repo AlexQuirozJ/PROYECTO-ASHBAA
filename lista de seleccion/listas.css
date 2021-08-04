@@ -1,0 +1,57 @@
+:root {
+  /*Letra*/
+  --FuenteHeading: 'Lobster', cursive;
+  --FuenteNormal: 'Quicksand', sans-serif;
+  /*Colores*/
+  --ColorSeleccion: #053136d0;
+  --ColorContraste: #7ec544;
+
+  --colorTextos: #fdd1d167;
+}
+h1{font-family: var(--FuenteHeading);}
+h2{font-family: var(--FuenteHeading);}
+h3{font-family: var(--FuenteHeading);}
+h4{font-family: var(--FuenteHeading);}
+body{font-family: var(--FuenteNormal);}
+a{font-family: var(--FuenteNormal);}
+p{font-family: var(--FuenteNormal);}
+
+  /*CODIGO DE LOS CARDS*/
+
+  .card{
+    text-align: center;
+  }
+  
+/*CODIGO DE LOS BANNER*/
+.responsive-banner {
+  margin: 80px auto;
+  width: 230px;
+
+  height: auto;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, #D45BA1, #A784E0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.container-envelope {
+  padding: 35px 15px;
+  color: #fff;
+}
+
+img {
+  width:230px;
+  height:150px;
+  margin-top: 30px;
+}
+
+
+.lateral{
+  float: left;
+  width: 230px;
+  height: 487px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.centro{
+  float: left;
+}
