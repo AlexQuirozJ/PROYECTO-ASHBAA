@@ -7,7 +7,7 @@ icono.forEach(function(userItem) {
   });
   let camara = document.querySelector('#camara')
   camara.addEventListener('click',()=>{
-      alert('hola');
+
       let foto = document.querySelector('#file');
       foto.click();
         foto.onchange=function(e){
