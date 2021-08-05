@@ -3,7 +3,9 @@ const V_busqueda = document.getElementById('btn_busqueda');
 const productosMostrados = document.getElementById('productosMostrados');
 const formularioBusqueda = document.querySelector('form');
 
-let busqueda = document.getElementById('btn_busqueda').addEventListener('click', () => {
+let busqueda = document
+  .getElementById('btn_busqueda')
+  .addEventListener('click', () => {
     let input_busqueda = document.getElementById('label').value;
 
     //Validación de barra de búsqueda
@@ -21,6 +23,16 @@ let busqueda = document.getElementById('btn_busqueda').addEventListener('click',
         productosMostrados.innerHTML = '';
         const search = document.getElementById('search');
         let busqueda = search.value;
+
+        //Guardamos en local storage el elemento de búsqueda
+        localStorage.setItem(busqueda);
+        //Y lo redirigimos a la página donde se desplegará la información
+        url = window.location;
+
+        path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1);
+
+        location.href = path + 'respuestaFetch.html';
+
         cargarProductos(busqueda);
       });
       //Se llama el método de la API de productos y se coloca al final el valor de la búsqueda
@@ -30,14 +42,6 @@ let busqueda = document.getElementById('btn_busqueda').addEventListener('click',
             `http://localhost:8080/products/query/?name=${busqueda}`
           );
           //console.log(`http://localhost:8080/products/query/?name=${busqueda}`);
-          //Guardamos en local storage el elemento de búsqueda
-          localStorage.setItem(busqueda);
-          //Y lo redirigimos a la página donde se desplegará la información
-          url = window.location;
-
-          path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1);
-
-          location.href = path + 'respuestaFetch.html';
 
           let productosLista = await res.json();
           displayProductos(productosLista);
