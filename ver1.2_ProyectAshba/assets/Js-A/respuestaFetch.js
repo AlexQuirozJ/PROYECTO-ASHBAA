@@ -42,5 +42,3 @@ const displayProductos = (products) => {
     .join('');
   productosMostrados.innerHTML = htmlString;
 };
-
-//cargarProductos();
