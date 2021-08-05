@@ -45,7 +45,11 @@ h4 {
 h5 {
   font-family: var(--FuenteHeading);
 }
-a{font-family: var(--FuenteNormal);}
+a{font-family: var(--FuenteNormal);
+  color:rgb(165, 165, 165)}
+  a:hover{
+    color:rgb(243, 243, 243)}
+  
 p{font-family: var(--FuenteNormal);
 font-size: 1rem;
 margin: 0;}
@@ -62,7 +66,6 @@ margin: 0;}
 /*Boton de la barra de navegacion*/
 .boton {
   position: relative;
-  margin-right: 20px;
 }
 .boton__contenido {
   position: absolute;
@@ -167,4 +170,14 @@ margin: 0;}
   justify-content: center;
   margin-top: 5px;
 
+}
+.acomodando{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 15%;
+}
+@media (min-width: 1603px) {
+  .acomodando{
+      width: 13%;
+  }
 }
