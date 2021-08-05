@@ -1,10 +1,27 @@
-let icono = document.querySelectorAll('.heart');
 
+
+//funcion para efecto de corazon
+let icono = document.querySelectorAll('.heart');
+let estado = false;
 icono.forEach(function(userItem) {
     userItem.addEventListener('click', function () {
-        userItem.classList.add('heart_animate');
+        switch (estado) {
+            case false:
+                userItem.classList.add('heart_animate');
+                estado=true;
+                break;
+            case true:
+                userItem.classList.remove('heart_animate');
+                estado=false;
+                break;
+            
+        }
+    /*     userItem.classList.add('heart_animate'); */
+
     });
   });
+
+//funcion para poner fotos 
   let camara = document.querySelector('#camara')
   camara.addEventListener('click',()=>{
       let foto = document.querySelector('#file');
