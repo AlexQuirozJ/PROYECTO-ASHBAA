@@ -11,7 +11,7 @@ let busqueda = document
       MostrarMensaje('Por favor ingresa texto en el campo de busqueda');
     } else {
       //Si contiene información, corre la función de búsqueda
-      realizarBusqueda;
+      realizarBusqueda();
       //Aquí está la versión hardcodeada de la página de respuesta
       //V_busqueda.href= "resBusquedaS.html"
     }
@@ -34,7 +34,7 @@ const formularioBusqueda = document.querySelector('form');
 
 //Se agrega un evento a la barra de búsqueda
 let realizarBusqueda = formularioBusqueda.addEventListener('submit', (e) => {
-  e.preventDefault();
+  //e.preventDefault();
   productosMostrados.innerHTML = '';
   const search = document.getElementById('search');
   let busqueda = search.value;
