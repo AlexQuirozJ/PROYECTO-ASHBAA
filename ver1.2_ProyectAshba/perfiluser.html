@@ -77,7 +77,10 @@
      </li>
    </ul>
    
-    <li class="nav-item dropdown">
+    <li class="nav-item dropdown acomodando">
+      <div>
+        <img src="usuario.png" alt="foto de perfil" width="100%">
+      </div>
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -96,51 +99,46 @@
           </div>
         </li>
          <!--Se cambio de lugar el perdil de usuario, a un lado del buscador-->
-
-         <div id="main-container">
-          <div id="bar-container">
-            <div id="bar">
-              <div class="section photo">
-                <img src="usuario.png" alt="foto de perfil" width="7%">
-              </div>
-            </div>
-          </div>
-        </div>
+        
+                
             <!--Imagen de usuario miniatura-->
    
-   <form class="form-inline my-2 my-lg-1">
-     <a
-       href="resBusquedaS.html"
-       class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton"
-       type="submit"
-       ><p class="boton__contenido">
-         <svg
-           xmlns="http://www.w3.org/2000/svg"
-           class="icon icon-tabler icon-tabler-search"
-           width="28"
-           height="28"
-           viewBox="0 0 24 24"
-           stroke-width="2.5"
-           stroke="#ffffff"
-           fill="none"
-           stroke-linecap="round"
-           stroke-linejoin="round"
-         >
-           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-           <circle cx="10" cy="10" r="7" />
-           <line x1="21" y1="21" x2="15" y2="15" />
-         </svg></p
-     ></a>
-     <input
-       class="form-control mr-sm-1"
-       type="search"
-       placeholder="¿Que buscas?"
-       aria-label="Search"
-       id="label"
-     />
-   </form>
- </div>
-</nav>
+            <form class="form-inline my-lg-1">
+              <div>
+                  <a
+                href="#"
+                class="btn btn-outline-dark my-sm-0 boton"
+                type="submit"
+                id="btn_busqueda"
+                >
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-search"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+              </a>
+              <input
+                class="form-control mr-sm-1"
+                type="search"
+                placeholder="¿Que buscas?"
+                aria-label="Search"
+                id="label"
+              />
+              </div>
+            </form>
+          </div>
+        </nav>
 <!--Fin de los elementos del nav-->
 <!-- Aquí termina la barra navegadora -->
 
@@ -214,6 +212,7 @@
                     <div class="feed">
                         <div class="actions">
                             <div class="heart"></div>
+                            <input type="checkbox" name="check" id="check1" class="checks-heart">
                         </div>
                     </div>
                 </div>
@@ -260,6 +259,7 @@
                     <div class="feed">
                         <div class="actions">
                             <div class="heart"></div>
+                            <input type="checkbox" name="check" id="check1" class="checks-heart">
                         </div>
                     </div>
                 </div>
@@ -306,6 +306,7 @@
                     <div class="feed">
                         <div class="actions">
                             <div class="heart"></div>
+                            <input type="checkbox" name="check" id="check1" class="checks-heart">
                         </div>
                     </div>
                 </div>
@@ -381,6 +382,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="/ver1.2_ProyectAshba/assets/Js-A/icono-perfil.js"></script>
+    <script src="assets/Js-A/icono-perfil.js"></script>
   </body>
 </html>

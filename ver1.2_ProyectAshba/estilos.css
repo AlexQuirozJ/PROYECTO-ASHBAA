@@ -77,6 +77,18 @@ input[type='password'] {
   border-radius: 5px;
   cursor: pointer;
 }
+#button1{
+  margin-left: 200px;
+  border: none;
+  width: 700px;
+  color: white;
+  font-size: 20px;
+  background: #1a2537;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
 .button:hover {
   background: cadetblue;
 }
@@ -100,29 +112,12 @@ p {
   }
 }
 
-<<<<<<< HEAD
-#button1{
-    border: none;
-    
-    color: white;
-    font-size: 20px;
-    background:  #1a2537;
-    padding: 15px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 180px;
-}
-#button1:hover{
-    background: cadetblue;
-}
-=======
 .error {
   background-color: rgb(255, 200, 211);
   color: #ff0033;
   font-size: 20px;
   text-align: center;
   height: 40px;
->>>>>>> e0ead2a39b9bb2290dd07ad5151c861642eb5cea
 
   transition: 0.5s;
   font-family: var(--FuenteHeading);
