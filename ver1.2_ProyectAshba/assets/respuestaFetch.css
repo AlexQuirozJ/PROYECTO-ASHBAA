@@ -71,7 +71,7 @@ h5 {
   text-decoration: none;
 }
 
-#imgAPI{
+#imgAPI {
   width: 200px;
   height: 200px;
   padding: 10px;
@@ -231,6 +231,16 @@ h5 {
   margin-top: 5vh;
   display: flex;
   justify-content: space-around;
+}
+
+.imagen-contenedor {
+  height: 80px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.imagen_bus {
+  object-fit: contain;
 }
 
 .cards_fetch {
