@@ -16,7 +16,7 @@ icono.forEach(function(userItem) {
                 break;
             
         }
-    /*     userItem.classList.add('heart_animate'); */
+
 
     });
   });
