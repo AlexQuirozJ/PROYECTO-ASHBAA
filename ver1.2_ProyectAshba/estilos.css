@@ -58,6 +58,7 @@ input[type='password'] {
   padding: 10px;
   border: none;
 }
+
 .input-contenedor {
   margin-bottom: 15px;
   border: 1px solid #aaa;
@@ -76,18 +77,24 @@ input[type='password'] {
   padding: 15px 20px;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 #button1{
-  margin-left: 200px;
+  margin-left: 0px;
   border: none;
-  width: 700px;
+  width: 470px;
   color: white;
   font-size: 20px;
   background: #1a2537;
   padding: 15px 20px;
   border-radius: 5px;
   cursor: pointer;
+
   
+}
+
+#button1:hover {
+  background: cadetblue;
 }
 .button:hover {
   background: cadetblue;
