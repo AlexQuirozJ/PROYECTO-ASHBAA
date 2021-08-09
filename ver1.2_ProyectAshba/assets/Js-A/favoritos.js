@@ -1,8 +1,11 @@
+/* const Fav = () =>{
+alert('hola')
 let icono = document.querySelectorAll('.heart');
 let estado = false;
 icono.forEach(function(userItem) {
+    console.log(userItem);
     userItem.addEventListener('click', function () {
-     
+        alert('Script');
         switch (estado) {
             case false:
                 userItem.classList.add('heart_animate');
@@ -18,3 +21,5 @@ icono.forEach(function(userItem) {
 
     });
   });
+}
+  document.addEventListener('DOMContentLoaded',Fav); */
