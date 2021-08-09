@@ -19,90 +19,72 @@
   </head>
 
   <body>
-    <!-- Barra Navegadora -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark"
-      id="DESPLEGABLE"
-    >
-      <!--Busqueda- Imagen SVG-->
-      <a class="navbar-brand" href="index.html"><img src="assets/IMAGENES-A/ashba.png" alt="#" height="50px" srcset=""></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--Fin de Busqueda- Imagen SVG-->
-      <!--Elemntos del nav-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="listas_act.html"
-              >Mi lista <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="loginvista.html"
-              >Inicia sesión o regístrate</a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Recomendaciones
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="contactanos.html">Contáctanos</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-1">
-          <a
-            href="#"
-            class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton"
-            type="submit"
-            id="btn_busqueda"
-            ><p class="boton__contenido">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-search"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                stroke-width="2.5"
-                stroke="#ffffff"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="10" cy="10" r="7" />
-                <line x1="21" y1="21" x2="15" y2="15" />
-              </svg></p
-          ></a>
-          <input
-            class="form-control mr-sm-1"
-            type="search"
-            placeholder="¿Que buscas?"
-            aria-label="Search"
-            id="label"
-          />
-        </form>
-      </div>
-    </nav>
-    <!--Fin de los elementos del nav-->
+ <!-- Barra Navegadora -->
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="DESPLEGABLE">
+  <!--Busqueda- Imagen SVG-->
+  <a class="navbar-brand" href="index.html"><img class="imagen"src="assets/IMAGENES-A/ashba.png" alt="#" height="50px" srcset=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<!--Fin de Busqueda- Imagen SVG-->
+<!--Elemntos del nav-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="listas_act.html">Mi lista <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="loginvista.html">Inicia sesión o regístrate</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Recomendaciones
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contactanos.html">Contáctanos</a>
+          
+        </div>
+      </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-1">
+      <a
+        href="#"
+        class="btn btn-outline-dark my-2 my-sm-0 ml-2 boton"
+        type="submit"
+        id="btn_busqueda"
+        ><p class="boton__contenido">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-search"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="10" cy="10" r="7" />
+            <line x1="21" y1="21" x2="15" y2="15" />
+          </svg></p
+      ></a>
+      <input
+      class="form-control mr-sm-1"
+      type="search"
+      placeholder="¿Que buscas?"
+      aria-label="Search"
+      id="label"
+    />
+    </form>
+  </div>
+</nav>
+<!--Fin de los elementos del nav-->
     <div id="alerta"></div>
     <!-- Aquí termina la barra navegadora -->
     <!-- Aquí termina la barra navegadora -->
@@ -122,8 +104,21 @@
     <div class="container mi_grid">
       <div class="card">
         <img class="imagen_bus" src="./assets/IMAGENES-A/SM1.PNG" />
+          <!--iconos de interaccion-->
+          <div class="iconos">
+            <div class="heart titulo-n"></div>
+            <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <div class="mas"></div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="contactanos.html">Regalos</a>
+              <a class="dropdown-item" href="contactanos.html">Ahorros</a>
+            </div>
+          </div>
+          <!--iconos de interaccion-->
         <h3>Redmi 9A</h3>
-        <div class="heart titulo-n"></div>
+       
         <p>Smartphone Redmi 9A 32GB Azul Xiaomi Desbloqueado</p>
         <p style="color: red">$2,163</p>
         <a
@@ -134,8 +129,20 @@
 
       <div class="card">
         <img class="imagen_bus" src="./assets/IMAGENES-A/SM2.PNG" />
+          <!--iconos de interaccion-->
+          <div class="iconos">
+            <div class="heart titulo-n"></div>
+            <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <div class="mas"></div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="contactanos.html">Regalos</a>
+              <a class="dropdown-item" href="contactanos.html">Ahorros</a>
+            </div>
+          </div>
+          <!--iconos de interaccion-->
         <h3>Iphone 12 Pro</h3>
-        <div class="heart titulo-n"></div>
         <p>Apple Nuevo iPhone 12 Pro MAX (512 GB) - Color Plata</p>
         <p style="color: red">$37,999</p>
         <a
@@ -146,8 +153,20 @@
 
       <div class="card">
         <img class="imagen_bus" src="./assets/IMAGENES-A/SM3.PNG" />
-        <h3>Moto G30</h3>
+       <!--iconos de interaccion-->
+       <div class="iconos">
         <div class="heart titulo-n"></div>
+        <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <div class="mas"></div>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contactanos.html">Regalos</a>
+          <a class="dropdown-item" href="contactanos.html">Ahorros</a>
+        </div>
+      </div>
+      <!--iconos de interaccion-->
+        <h3>Moto G30</h3>
         <p>Celular Motorola Moto G30 128 GB Gris</p>
         <p style="color: red">$4,999</p>
         <a
@@ -158,8 +177,20 @@
 
       <div class="card">
         <img class="imagen_bus" src="./assets/IMAGENES-A/SM4.PNG" />
-        <h3>Galaxy A12</h3>
+       <!--iconos de interaccion-->
+       <div class="iconos">
         <div class="heart titulo-n"></div>
+        <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <div class="mas"></div>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="contactanos.html">Regalos</a>
+          <a class="dropdown-item" href="contactanos.html">Ahorros</a>
+        </div>
+      </div>
+      <!--iconos de interaccion-->
+        <h3>Galaxy A12</h3>
         <p>Smartphone Samsung Galaxy A12 64Gb Negro Samsung Desbloqueado</p>
         <p style="color: red">$3,339</p>
         <a
@@ -170,8 +201,20 @@
 
       <div class="card">
         <img class="imagen_bus" src="./assets/IMAGENES-A/SM5.PNG" />
+  <!--iconos de interaccion-->
+  <div class="iconos">
+    <div class="heart titulo-n"></div>
+    <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <div class="mas"></div>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="contactanos.html">Regalos</a>
+      <a class="dropdown-item" href="contactanos.html">Ahorros</a>
+    </div>
+  </div>
+  <!--iconos de interaccion-->
         <h3>OnePlus</h3>
-        <div class="heart titulo-n"></div>
         <p>
           OnePlus - Teléfono celular 8T 5G KB2000, Memoria RAM de 12 GB, 256 GB,
           color plateado lunar
@@ -184,8 +227,20 @@
       </div>
       <div class="card">
         <img class="imagen_bus" src="./assets/IMAGENES-A/SM6.PNG" />
+  <!--iconos de interaccion-->
+  <div class="iconos">
+    <div class="heart titulo-n"></div>
+    <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <div class="mas"></div>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="contactanos.html">Regalos</a>
+      <a class="dropdown-item" href="contactanos.html">Ahorros</a>
+    </div>
+  </div>
+  <!--iconos de interaccion-->
         <h3>Galaxy A72</h3>
-        <div class="heart titulo-n"></div>
         <p>AT&T/Unefon Samsung Galaxy A72 128 GB Negro</p>
         <p style="color: red">$10,999</p>
         <a
@@ -195,8 +250,20 @@
       </div>
       <div class="card">
         <img class="imagen_bus" src="./assets/IMAGENES-A/SM7.PNG" />
+          <!--iconos de interaccion-->
+          <div class="iconos">
+            <div class="heart titulo-n"></div>
+            <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <div class="mas"></div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="contactanos.html">Regalos</a>
+              <a class="dropdown-item" href="contactanos.html">Ahorros</a>
+            </div>
+          </div>
+          <!--iconos de interaccion-->
         <h3>Galaxy A12</h3>
-        <div class="heart titulo-n"></div>
         <p>Smartphone Samsung Galaxy A12 64Gb Rojo Samsung Desbloqueado</p>
         <p style="color: red">$3,339</p>
         <a
@@ -207,8 +274,20 @@
 
       <div class="card">
         <img class="imagen_bus" src="./assets/IMAGENES-A/SM8.PNG" />
+          <!--iconos de interaccion-->
+          <div class="iconos">
+            <div class="heart titulo-n"></div>
+            <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <div class="mas"></div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="contactanos.html">Regalos</a>
+              <a class="dropdown-item" href="contactanos.html">Ahorros</a>
+            </div>
+          </div>
+          <!--iconos de interaccion-->
         <h3>Blackview</h3>
-        <div class="heart titulo-n"></div>
         <p>Blackview Smartphone Resistente al Agua Desbloqueado</p>
         <p style="color: red">$3,956.98</p>
         <a
@@ -219,8 +298,20 @@
 
       <div class="card">
         <img class="imagen_bus" src="./assets/IMAGENES-A/SM9.PNG" />
+          <!--iconos de interaccion-->
+          <div class="iconos">
+            <div class="heart titulo-n"></div>
+            <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <div class="mas"></div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="contactanos.html">Regalos</a>
+              <a class="dropdown-item" href="contactanos.html">Ahorros</a>
+            </div>
+          </div>
+          <!--iconos de interaccion-->
         <h3>Huawei</h3>
-        <div class="heart titulo-n"></div>
         <p>Telcel Huawei Y7A 64 GB Rosa</p>
         <p style="color: red">$4,889</p>
         <a
