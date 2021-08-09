@@ -15,9 +15,9 @@ formularioBusqueda.addEventListener('submit', (e) => {
 const cargarProductos = async (busqueda) => {
   try {
     const res = await fetch(
-      `http://localhost:8080/products/query/?name=${busqueda}`
+      `https://dry-thicket-77170.herokuapp.com/products/query/?name=${busqueda}`
     );
-    console.log(`http://localhost:8080/products/query/?name=${busqueda}`);
+    console.log(`https://dry-thicket-77170.herokuapp.com/products/query/? name=${busqueda}`);
     let productosLista = await res.json();
     displayProductos(productosLista);
   } catch (err) {
