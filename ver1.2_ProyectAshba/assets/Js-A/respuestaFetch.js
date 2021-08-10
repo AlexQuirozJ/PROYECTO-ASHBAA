@@ -17,7 +17,9 @@ const cargarProductos = async (busqueda) => {
     const res = await fetch(
       `https://dry-thicket-77170.herokuapp.com/products/query/?name=${busqueda}`
     );
-    console.log(`https://dry-thicket-77170.herokuapp.com/products/query/? name=${busqueda}`);
+    console.log(
+      `https://dry-thicket-77170.herokuapp.com/products/query/? name=${busqueda}`
+    );
 
     let productosLista = await res.json();
     displayProductos(productosLista);
@@ -57,25 +59,22 @@ const displayProductos = (products) => {
   productosMostrados.innerHTML = htmlString;
   Fav();
 };
-function Fav(){
+function Fav() {
   let icono = document.querySelectorAll('.heart');
   let estado = false;
   console.log(icono);
-  icono.forEach(function(userItem) {
-      userItem.addEventListener('click', function () {
-          switch (estado) {
-              case false:
-                  userItem.classList.add('heart_animate');
-                  estado=true;
-                  break;
-              case true:
-                  userItem.classList.remove('heart_animate');
-                  estado=false;
-                  break;
-              
-          }
-  
-  
-      });
+  icono.forEach(function (userItem) {
+    userItem.addEventListener('click', function () {
+      switch (estado) {
+        case false:
+          userItem.classList.add('heart_animate');
+          estado = true;
+          break;
+        case true:
+          userItem.classList.remove('heart_animate');
+          estado = false;
+          break;
+      }
     });
-  }
+  });
+}
