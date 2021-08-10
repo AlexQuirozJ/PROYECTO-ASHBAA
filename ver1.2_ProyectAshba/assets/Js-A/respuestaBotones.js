@@ -59,7 +59,7 @@ const displayProductos = (products) => {
     })
     .join('');
   itemTienda.innerHTML = htmlString;
-  Fav()
+  Fav();
 };
 
 //Esta es la función que filtra los elementos por tienda
@@ -72,25 +72,22 @@ const storeFirstItem = (products, storeName) => {
 
   return item;
 };
- function Fav(){
+function Fav() {
   let icono = document.querySelectorAll('.heart');
   let estado = false;
   console.log(icono);
-  icono.forEach(function(userItem) {
-      userItem.addEventListener('click', function () {
-          switch (estado) {
-              case false:
-                  userItem.classList.add('heart_animate');
-                  estado=true;
-                  break;
-              case true:
-                  userItem.classList.remove('heart_animate');
-                  estado=false;
-                  break;
-              
-          }
-  
-  
-      });
+  icono.forEach(function (userItem) {
+    userItem.addEventListener('click', function () {
+      switch (estado) {
+        case false:
+          userItem.classList.add('heart_animate');
+          estado = true;
+          break;
+        case true:
+          userItem.classList.remove('heart_animate');
+          estado = false;
+          break;
+      }
     });
-  }
+  });
+}
