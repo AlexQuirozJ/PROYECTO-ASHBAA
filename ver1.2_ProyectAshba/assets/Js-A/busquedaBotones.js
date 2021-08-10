@@ -126,7 +126,7 @@ if (
 } else if (
   btnImpresora1 != undefined ||
   btnImpresora2 != undefined ||
-  btnImpresora3 != undefined
+  btnImpresora3 != undefined 
 ) {
   btnImpresora1.addEventListener('click', (e) => {
     e.preventDefault();

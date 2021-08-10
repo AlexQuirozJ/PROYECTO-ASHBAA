@@ -47,7 +47,16 @@ const displayProductos = (products) => {
           <h4>${product.name}</h4>
           <div class="heart titulo-n"></div> 
           <p><b>${product.tienda}</b></p>
-          <p style="color: red"><b>$${product.precio}.00</b></p>            
+          <p style="color: red"><b>$${product.precio}.00</b></p>   
+          <!--iconos de interaccion-->
+          <div class="iconos">
+            <div class="heart titulo-n"></div>
+            <a class="dropdown-toggle flex-icono" href="#" id="navbarDropdown" role="button" 
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <div class="mas"></div>
+            </a>
+          </div>
+          <!--iconos de interaccion-->         
         </div>
         </div>
         </div>
