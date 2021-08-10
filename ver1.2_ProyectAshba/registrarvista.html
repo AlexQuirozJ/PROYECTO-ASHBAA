@@ -1,61 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Registrate</title> 
-	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
- <!--Fuentes externas-->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;500&display=swap" rel="stylesheet"> 
- <link rel="stylesheet" href="estilos.css">
-</head>  
-<body>
- <form class="formulario">
-    
-    <h1>Registrate</h1>
-     <div class="contenedor">
-     
-     <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" placeholder="Nombre Completo">
-         
-         </div>
-         
-         <div class="input-contenedor">
-         <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico">
-         
-         </div>
-         
-         <div class="input-contenedor">
-        <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
-         
-         </div>
-         <input type="submit" value="Registrate" class="button">
-         <br><br>
-         <input type="submit" value="Registrate con Google" class="button"> 
-      
-  
-         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-         <p>¿Ya tienes una cuenta?<a class="link" href="loginvista.html">Iniciar Sesion</a></p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registrate</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <!--Fuentes externas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <form class="formulario" id="formRegister">
+      <h1>Registrate</h1>
+      <div class="contenedor">
+        <div class="input-contenedor">
+          <i class="fas fa-user icon"></i>
+          <input type="text" id="name" placeholder="Nombre(s)" />
+        </div>
+        <span id="nameError"></span>
 
-         <p><a class="link" href="index.html" >Volver al inicio</a></p>
-     </div>
+        <div class="input-contenedor">
+          <i class="fas fa-user icon"></i>
+          <input type="text" id="surname" placeholder="Apellidos" />
+        </div>
+        <span id="nameError"></span>
+
+        <div class="input-contenedor">
+          <i class="fas fa-user icon"></i>
+          <input type="text" id="username" placeholder="Nombre de usuario" />
+        </div>
+        <span id="nameError"></span>
+
+        <div class="input-contenedor">
+          <i class="fas fa-envelope icon"></i>
+          <input type="text" id="email" placeholder="Correo Electronico" />
+        </div>
+        <span id="emailError"></span>
+
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="password" id="password" placeholder="Contraseña" />
+        </div>
+        <span id="passwordError"></span>
+        <input type="submit" value="Registrate" class="button" />
+        <br /><br />
+        <input type="submit" value="Registrate con Google" class="button" />
+
+        <p>
+          Al registrarte, aceptas nuestras Condiciones de uso y Política de
+          privacidad.
+        </p>
+        <p>
+          ¿Ya tienes una cuenta?<a class="link" href="loginvista.html"
+            >Iniciar Sesion</a
+          >
+        </p>
+
+        <p><a class="link" href="index.html">Volver al inicio</a></p>
+      </div>
     </form>
 
-
     <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"
-  ></script>
-</body>
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/Js-A/registrarvista.js"></script>
+  </body>
 </html>
