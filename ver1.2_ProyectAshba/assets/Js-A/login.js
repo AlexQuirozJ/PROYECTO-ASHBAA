@@ -1,6 +1,6 @@
-const formLogin = document.getElementById('formLogin');
+const login = document.getElementById('button1');
 
-formLogin.addEventListener('submit', (e) => {
+login.addEventListener('click', (e) => {
   e.preventDefault();
   const username = document.getElementById('username');
   const password = document.getElementById('password');
