@@ -297,3 +297,51 @@ p {
 .mas:hover{
   background-image: url(IMAGENES-A/mas3.png);
 }
+.heart {
+  background-image: url(IMAGENES-A/web_heart_animation.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 1800px;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  width: 65px;
+}
+@media (max-width: 460px) {
+  .heart{
+    background-size: 1500px;
+    height: 50px;
+    width: 50px;
+  }
+}
+.heart:hover
+{
+   background-position: right;
+}
+
+@-webkit-keyframes heartTransition
+{
+   0% {background-position: left;}
+   100% {background-position: right;}
+}
+
+@keyframes heartTransition
+{
+   0% {background-position: left;}
+   100% {background-position: right;}
+}
+
+.heart_animate
+{
+   -webkit-animation-duration: .8s;
+   -webkit-animation-iteration-count: 1;
+/*     -webkit-animation-iteration-count: infinite; */
+   -webkit-animation-name: heartTransition;
+   -webkit-animation-timing-function: steps(28);
+   animation-duration: .8s;
+   animation-iteration-count: 1;
+/*     animation-iteration-count: infinite; */
+   animation-name: heartTransition;
+   animation-timing-function: steps(28);
+   background-position: right;
+}
